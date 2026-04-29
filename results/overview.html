@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cohort results · CS Undergraduate · Fall 2026</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: {
+        indigo:{50:'#f1f4f9',100:'#e1e8f0',200:'#c2cee0',300:'#93a6c2',400:'#5d779e',500:'#3a5577',600:'#1d3354',700:'#0f2744',800:'#0a1628',900:'#060e1c'},
+        slate:{50:'#faf8f3',100:'#f3f0e8',200:'#ece9e1',300:'#d8d3c8',400:'#b8b3a7',500:'#8a857a',600:'#5b5b58',700:'#4a4a48',800:'#2a2a28',900:'#1a1a1a'},
+        violet:{500:'#1d3354',600:'#0f2744'},
+        emerald:{50:'#f1f7f3',100:'#dde9e0',200:'#c5dccd',300:'#9bc3a8',400:'#6ba37d',500:'#2f6b3f',600:'#235132',700:'#1c4127',800:'#143019',900:'#0c1f10'},
+        amber:{50:'#fbf6e9',100:'#f5ebcc',200:'#e2d2a8',300:'#cfb87a',400:'#b89c4d',500:'#8c6a1f',600:'#735618',700:'#5b4413',800:'#43320d',900:'#2b2008'},
+        rose:{50:'#fbeef0',100:'#f3d8dd',200:'#e2c0c6',300:'#c8939e',400:'#a85f6d',500:'#8a2632',600:'#741e29',700:'#5b1820',800:'#421217',900:'#2a0c0e'}
+      },
+      fontFamily: { serif: ['"Source Serif 4"','Georgia','serif'] }
+    }}}
+  </script>
+  <link rel="stylesheet" href="../assets/shared.css" />
+</head>
+<body class="bg-slate-50 min-h-screen">
+  <a href="../index.html" class="sitemap-pill">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Sitemap
+  </a>
+
+  <header class="border-b border-slate-300 bg-white">
+    <div class="max-w-7xl mx-auto px-8 py-3 flex items-center justify-between text-xs">
+      <a href="../admin/dashboard.html" class="text-slate-600 hover:text-indigo-700">← Institutional dashboard</a>
+      <span class="text-slate-500">Confidential cohort report · Generated 29 Apr 2026, 16:42 GMT</span>
+    </div>
+    <div class="max-w-7xl mx-auto px-8 py-6 flex items-end justify-between">
+      <div>
+        <div class="eyebrow mb-2">Cohort Results</div>
+        <h1 class="font-serif text-3xl font-semibold leading-tight">Computer Science Undergraduate · Fall 2026</h1>
+        <div class="text-sm text-slate-600 mt-1">Northstar University · 374 of 680 applicants completed assessment</div>
+      </div>
+      <div class="flex items-center gap-2">
+        <a href="compare.html" class="btn-secondary">Comparative view</a>
+        <button class="btn-primary">Export cohort report</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-8 py-10 space-y-8">
+
+    <!-- Headline metrics -->
+    <section class="grid grid-cols-5 border border-slate-300 divide-x divide-slate-300 bg-white">
+      <div class="p-6">
+        <div class="eyebrow text-slate-500 mb-2">Completed</div>
+        <div class="font-serif text-3xl font-semibold tabular-nums">374</div>
+        <div class="text-xs text-slate-600 mt-1">of 680 invited · 55%</div>
+      </div>
+      <div class="p-6">
+        <div class="eyebrow text-slate-500 mb-2">Composite mean</div>
+        <div class="font-serif text-3xl font-semibold tabular-nums">3.7<span class="text-base text-slate-400 font-normal"> / 5.0</span></div>
+        <div class="text-xs text-slate-600 mt-1">σ = 0.78</div>
+      </div>
+      <div class="p-6">
+        <div class="eyebrow text-slate-500 mb-2">Top quartile</div>
+        <div class="font-serif text-3xl font-semibold tabular-nums text-emerald-700">94</div>
+        <div class="text-xs text-slate-600 mt-1">Composite ≥ 4.3</div>
+      </div>
+      <div class="p-6">
+        <div class="eyebrow text-slate-500 mb-2">Flagged for review</div>
+        <div class="font-serif text-3xl font-semibold tabular-nums text-amber-700">22</div>
+        <div class="text-xs text-slate-600 mt-1">Low confidence in scoring</div>
+      </div>
+      <div class="p-6">
+        <div class="eyebrow text-slate-500 mb-2">Integrity concerns</div>
+        <div class="font-serif text-3xl font-semibold tabular-nums" style="color:#8a2632">3</div>
+        <div class="text-xs text-slate-600 mt-1">Manual review required</div>
+      </div>
+    </section>
+
+    <!-- Distribution + per-criterion -->
+    <section class="grid lg:grid-cols-3 gap-px bg-slate-300 border border-slate-300">
+      <div class="bg-white p-6 lg:col-span-2">
+        <div class="flex items-baseline justify-between mb-5">
+          <div class="eyebrow">Composite Score Distribution</div>
+          <div class="text-xs text-slate-500">n = 374</div>
+        </div>
+        <div class="flex items-end gap-3 h-40 mb-2 border-b border-slate-200 pb-1">
+          <div class="flex-1 flex flex-col items-center justify-end"><div class="w-full" style="height:8%;background:#1d3354"></div></div>
+          <div class="flex-1 flex flex-col items-center justify-end"><div class="w-full" style="height:14%;background:#1d3354"></div></div>
+          <div class="flex-1 flex flex-col items-center justify-end"><div class="w-full" style="height:25%;background:#1d3354"></div></div>
+          <div class="flex-1 flex flex-col items-center justify-end"><div class="w-full" style="height:38%;background:#1d3354"></div></div>
+          <div class="flex-1 flex flex-col items-center justify-end"><div class="w-full" style="height:55%;background:#1d3354"></div></div>
+          <div class="flex-1 flex flex-col items-center justify-end"><div class="w-full" style="height:78%;background:#1d3354"></div></div>
+          <div class="flex-1 flex flex-col items-center justify-end"><div class="w-full" style="height:92%;background:#1d3354"></div></div>
+          <div class="flex-1 flex flex-col items-center justify-end"><div class="w-full" style="height:65%;background:#1d3354"></div></div>
+          <div class="flex-1 flex flex-col items-center justify-end"><div class="w-full" style="height:30%;background:#1d3354"></div></div>
+        </div>
+        <div class="flex gap-3 text-xs text-slate-500 font-mono">
+          <div class="flex-1 text-center">1.0</div>
+          <div class="flex-1 text-center">1.5</div>
+          <div class="flex-1 text-center">2.0</div>
+          <div class="flex-1 text-center">2.5</div>
+          <div class="flex-1 text-center">3.0</div>
+          <div class="flex-1 text-center">3.5</div>
+          <div class="flex-1 text-center">4.0</div>
+          <div class="flex-1 text-center">4.5</div>
+          <div class="flex-1 text-center">5.0</div>
+        </div>
+      </div>
+      <div class="bg-white p-6">
+        <div class="eyebrow mb-5">Cohort Mean by Criterion</div>
+        <table class="tbl-corp">
+          <thead><tr><th>Criterion</th><th class="text-right">Mean</th></tr></thead>
+          <tbody>
+            <tr><td class="font-serif">Communication</td><td class="text-right font-semibold tabular-nums">3.9</td></tr>
+            <tr><td class="font-serif">Aptitude</td><td class="text-right font-semibold tabular-nums">3.5</td></tr>
+            <tr><td class="font-serif">Motivation</td><td class="text-right font-semibold tabular-nums">3.8</td></tr>
+            <tr><td class="font-serif">Critical thinking</td><td class="text-right font-semibold tabular-nums text-amber-700">3.4</td></tr>
+            <tr><td class="font-serif">Personal qualities</td><td class="text-right font-semibold tabular-nums">3.6</td></tr>
+            <tr><td class="font-serif">Engagement</td><td class="text-right font-semibold tabular-nums">4.2</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="card p-4 flex flex-wrap items-center gap-3">
+      <input class="border border-slate-300 px-3 py-2 text-sm flex-1 min-w-[220px]" placeholder="Search candidate by name or applicant identifier…" />
+      <select class="border border-slate-300 px-3 py-2 text-sm">
+        <option>All composite ranges</option>
+        <option>≥ 4.0 — strong recommend</option>
+        <option>3.0–4.0 — discuss</option>
+        <option>&lt; 3.0 — likely decline</option>
+      </select>
+      <select class="border border-slate-300 px-3 py-2 text-sm">
+        <option>All confidence levels</option>
+        <option>Flagged for committee review</option>
+        <option>Integrity concerns only</option>
+      </select>
+      <select class="border border-slate-300 px-3 py-2 text-sm">
+        <option>All decisions</option>
+        <option>Pending</option>
+        <option>Recommend admission</option>
+        <option>Waitlist</option>
+        <option>Decline</option>
+      </select>
+      <button class="btn-primary">Apply filters</button>
+    </section>
+
+    <!-- Candidate ranking table -->
+    <section class="card overflow-hidden">
+      <div class="px-6 py-5 border-b border-slate-300 flex items-baseline justify-between">
+        <div>
+          <div class="eyebrow">Ranked Candidate Register</div>
+          <div class="text-sm text-slate-600 mt-1">Ordered by composite score; rubric criteria displayed for context.</div>
+        </div>
+        <div class="text-xs text-slate-500">Showing 7 of 374</div>
+      </div>
+      <table class="tbl-corp">
+        <thead>
+          <tr>
+            <th class="w-8"><input type="checkbox" /></th>
+            <th>Rank</th>
+            <th>Candidate</th>
+            <th>Identifier</th>
+            <th class="text-right">Composite</th>
+            <th class="text-right">Comm.</th>
+            <th class="text-right">Apt.</th>
+            <th class="text-right">Mot.</th>
+            <th class="text-right">Crit.</th>
+            <th class="text-right">Pers.</th>
+            <th class="text-right">Eng.</th>
+            <th>Confidence</th>
+            <th>Determination</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><input type="checkbox" /></td><td class="font-mono">1</td><td class="font-serif font-semibold">Hiroshi Tanaka</td><td class="text-slate-500 font-mono text-xs">CS-26-0008</td><td class="text-right font-semibold tabular-nums text-emerald-700">4.7</td><td class="text-right tabular-nums">4.8</td><td class="text-right tabular-nums">4.6</td><td class="text-right tabular-nums">4.7</td><td class="text-right tabular-nums">4.8</td><td class="text-right tabular-nums">4.5</td><td class="text-right tabular-nums">4.9</td><td><span class="chip chip-positive">High</span></td><td><span class="chip chip-muted">Pending</span></td><td><a href="candidate.html" class="text-indigo-700 font-medium">Open dossier</a></td></tr>
+          <tr><td><input type="checkbox" /></td><td class="font-mono">2</td><td class="font-serif font-semibold">Aanya Sharma</td><td class="text-slate-500 font-mono text-xs">CS-26-0001</td><td class="text-right font-semibold tabular-nums text-emerald-700">4.4</td><td class="text-right tabular-nums">4.5</td><td class="text-right tabular-nums">4.2</td><td class="text-right tabular-nums">4.6</td><td class="text-right tabular-nums">4.3</td><td class="text-right tabular-nums">4.4</td><td class="text-right tabular-nums">4.5</td><td><span class="chip chip-positive">High</span></td><td><span class="chip chip-muted">Pending</span></td><td><a href="candidate.html" class="text-indigo-700 font-medium">Open dossier</a></td></tr>
+          <tr><td><input type="checkbox" /></td><td class="font-mono">3</td><td class="font-serif font-semibold">Priya Iyer</td><td class="text-slate-500 font-mono text-xs">CS-26-0042</td><td class="text-right font-semibold tabular-nums text-emerald-700">4.3</td><td class="text-right tabular-nums">4.4</td><td class="text-right tabular-nums">4.1</td><td class="text-right tabular-nums">4.5</td><td class="text-right tabular-nums">4.2</td><td class="text-right tabular-nums">4.0</td><td class="text-right tabular-nums">4.3</td><td><span class="chip chip-positive">High</span></td><td><span class="chip chip-positive">Recommend</span></td><td><a href="candidate.html" class="text-indigo-700 font-medium">Open dossier</a></td></tr>
+          <tr><td><input type="checkbox" /></td><td class="font-mono">4</td><td class="font-serif font-semibold">Ben O'Connor</td><td class="text-slate-500 font-mono text-xs">CS-26-0002</td><td class="text-right font-semibold tabular-nums">3.8</td><td class="text-right tabular-nums">4.0</td><td class="text-right tabular-nums">3.5</td><td class="text-right tabular-nums">3.9</td><td class="text-right tabular-nums">3.6</td><td class="text-right tabular-nums">3.7</td><td class="text-right tabular-nums">4.2</td><td><span class="chip chip-warning">Review</span></td><td><span class="chip chip-muted">Pending</span></td><td><a href="candidate.html" class="text-indigo-700 font-medium">Open dossier</a></td></tr>
+          <tr><td><input type="checkbox" /></td><td class="font-mono">5</td><td class="font-serif font-semibold">Daniyal Ahmed</td><td class="text-slate-500 font-mono text-xs">CS-26-0004</td><td class="text-right font-semibold tabular-nums">3.6</td><td class="text-right tabular-nums">3.7</td><td class="text-right tabular-nums">3.4</td><td class="text-right tabular-nums">3.8</td><td class="text-right tabular-nums">3.5</td><td class="text-right tabular-nums">3.4</td><td class="text-right tabular-nums">3.9</td><td><span class="chip chip-positive">High</span></td><td><span class="chip chip-warning">Waitlist</span></td><td><a href="candidate.html" class="text-indigo-700 font-medium">Open dossier</a></td></tr>
+          <tr><td><input type="checkbox" /></td><td class="font-mono">6</td><td class="font-serif font-semibold">Sara Kim</td><td class="text-slate-500 font-mono text-xs">CS-26-0011</td><td class="text-right font-semibold tabular-nums">3.5</td><td class="text-right tabular-nums">3.5</td><td class="text-right tabular-nums">3.3</td><td class="text-right tabular-nums">3.6</td><td class="text-right tabular-nums">3.4</td><td class="text-right tabular-nums">3.6</td><td class="text-right tabular-nums">3.8</td><td><span class="chip chip-positive">High</span></td><td><span class="chip chip-muted">Pending</span></td><td><a href="candidate.html" class="text-indigo-700 font-medium">Open dossier</a></td></tr>
+          <tr style="background:#fbeef0"><td><input type="checkbox" /></td><td class="font-mono text-slate-400">—</td><td class="font-serif font-semibold">Marco Bianchi</td><td class="text-slate-500 font-mono text-xs">CS-26-0027</td><td class="text-right font-semibold tabular-nums" style="color:#8a2632">2.1</td><td class="text-right tabular-nums">2.4</td><td class="text-right tabular-nums">1.8</td><td class="text-right tabular-nums">2.0</td><td class="text-right tabular-nums">1.9</td><td class="text-right tabular-nums">2.5</td><td class="text-right tabular-nums">2.0</td><td><span class="chip chip-critical">Off-screen voice</span></td><td><span class="chip chip-muted">Pending</span></td><td><a href="candidate.html" class="text-indigo-700 font-medium">Open dossier</a></td></tr>
+        </tbody>
+      </table>
+      <div class="px-6 py-3 border-t border-slate-300 text-xs text-slate-500 flex items-center justify-between">
+        <span>Page 1 of 54</span>
+        <div class="flex gap-2"><button class="px-2 py-1 hover:bg-slate-100">←</button><button class="px-2 py-1 font-semibold text-slate-900">1</button><button class="px-2 py-1 hover:bg-slate-100">2</button><button class="px-2 py-1 hover:bg-slate-100">3</button><button class="px-2 py-1 hover:bg-slate-100">…</button><button class="px-2 py-1 hover:bg-slate-100">→</button></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="inst-footer mt-16">
+    <div class="max-w-7xl mx-auto px-8 py-6 flex flex-wrap items-center justify-between gap-3">
+      <span>Northstar University · Office of Admissions · Confidential cohort document</span>
+      <span>Cohort report · prototype build 0.2</span>
+    </div>
+  </footer>
+</body>
+</html>

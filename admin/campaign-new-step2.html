@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New campaign · Applicant intake · Admissions Assistant</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: {
+        indigo:{50:'#f1f4f9',100:'#e1e8f0',200:'#c2cee0',300:'#93a6c2',400:'#5d779e',500:'#3a5577',600:'#1d3354',700:'#0f2744',800:'#0a1628',900:'#060e1c'},
+        slate:{50:'#faf8f3',100:'#f3f0e8',200:'#ece9e1',300:'#d8d3c8',400:'#b8b3a7',500:'#8a857a',600:'#5b5b58',700:'#4a4a48',800:'#2a2a28',900:'#1a1a1a'},
+        emerald:{50:'#f1f7f3',100:'#dde9e0',200:'#c5dccd',300:'#9bc3a8',400:'#6ba37d',500:'#2f6b3f',600:'#235132',700:'#1c4127',800:'#143019'},
+        rose:{50:'#fbeef0',100:'#f3d8dd',200:'#e2c0c6',300:'#c8939e',400:'#a85f6d',500:'#8a2632',600:'#741e29'}
+      },
+      fontFamily: { serif: ['"Source Serif 4"','Georgia','serif'] }
+    }}}
+  </script>
+  <link rel="stylesheet" href="../assets/shared.css" />
+</head>
+<body class="bg-slate-50 min-h-screen">
+  <a href="../index.html" class="sitemap-pill">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Sitemap
+  </a>
+
+  <header class="border-b border-slate-300 bg-white">
+    <div class="max-w-6xl mx-auto px-8 py-3 flex items-center justify-between text-xs">
+      <a href="campaign-new-step1.html" class="text-slate-600 hover:text-indigo-700">← Programme stream</a>
+      <button class="text-slate-500 hover:text-indigo-700">Save as draft and exit</button>
+    </div>
+    <div class="max-w-6xl mx-auto px-8 py-6">
+      <div class="eyebrow mb-2">CS Undergraduate · Fall 2026 · Step 2 of 5</div>
+      <h1 class="font-serif text-3xl font-semibold leading-tight">Applicant intake</h1>
+    </div>
+    <div class="max-w-6xl mx-auto px-8 pb-5">
+      <ol class="grid grid-cols-5 border border-slate-300 divide-x divide-slate-300">
+        <li class="px-4 py-3 bg-emerald-50"><span class="font-mono text-xs text-emerald-700">01 ✓</span><div class="text-emerald-700 font-medium">Stream</div></li>
+        <li class="px-4 py-3 bg-indigo-800 text-white"><span class="font-mono text-xs" style="color:#93a6c2">02</span><div class="font-serif font-semibold">Applicants</div></li>
+        <li class="px-4 py-3"><span class="font-mono text-xs text-slate-500">03</span><div class="text-slate-700">Rubric</div></li>
+        <li class="px-4 py-3"><span class="font-mono text-xs text-slate-500">04</span><div class="text-slate-700">Invitation</div></li>
+        <li class="px-4 py-3"><span class="font-mono text-xs text-slate-500">05</span><div class="text-slate-700">Commence</div></li>
+      </ol>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-8 py-10">
+    <p class="text-slate-700 mb-8 max-w-3xl leading-relaxed">Submit the applicant roster as a structured data file. The platform will validate the schema, surface errors for inline correction, and present the parsed records for review prior to invitation despatch.</p>
+
+    <!-- Drag-drop -->
+    <div class="card border-2 border-dashed border-slate-400 bg-slate-100 p-12 text-center mb-8" style="border-style:dashed;">
+      <div class="eyebrow text-slate-500 mb-3">Submit roster</div>
+      <h2 class="font-serif text-xl font-semibold mb-2">Drop a CSV or Excel file here</h2>
+      <p class="text-sm text-slate-600 mb-5">Maximum 50 MB. The roster must include the columns <code class="font-mono">name</code>, <code class="font-mono">email</code>, and <code class="font-mono">applicant_id</code>. Optional columns: <code class="font-mono">programme</code>, <code class="font-mono">form_url</code>.</p>
+      <button class="btn-secondary mb-3">Select file from your computer</button>
+      <div><a href="#" class="text-xs text-indigo-700 underline">Download the schema template</a></div>
+    </div>
+
+    <!-- Validation summary -->
+    <div class="card overflow-hidden mb-8">
+      <div class="px-6 py-5 border-b border-slate-300 flex items-center justify-between">
+        <div>
+          <div class="eyebrow">Roster Validation</div>
+          <div class="text-sm text-slate-700 mt-1 font-mono">applicants_cs_fall26.csv · 684 records · received just now</div>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="chip chip-positive">680 records valid</span>
+          <span class="chip chip-critical">4 records require attention</span>
+        </div>
+      </div>
+      <table class="tbl-corp">
+        <thead><tr><th>Row</th><th>Candidate name</th><th>Email</th><th>Applicant identifier</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td class="font-mono text-xs text-slate-500">1</td><td>Aanya Sharma</td><td class="text-slate-700">aanya.s@email.com</td><td class="font-mono">CS-26-0001</td><td><span class="chip chip-positive">Valid</span></td></tr>
+          <tr><td class="font-mono text-xs text-slate-500">2</td><td>Ben O'Connor</td><td class="text-slate-700">ben.oc@email.com</td><td class="font-mono">CS-26-0002</td><td><span class="chip chip-positive">Valid</span></td></tr>
+          <tr style="background:#fbeef0"><td class="font-mono text-xs text-slate-500">3</td><td>Carmen Diaz</td><td style="color:#8a2632">— missing —</td><td class="font-mono">CS-26-0003</td><td><span class="chip chip-critical">Email absent</span></td></tr>
+          <tr><td class="font-mono text-xs text-slate-500">4</td><td>Daniyal Ahmed</td><td class="text-slate-700">d.ahmed@email.com</td><td class="font-mono">CS-26-0004</td><td><span class="chip chip-positive">Valid</span></td></tr>
+          <tr style="background:#fbeef0"><td class="font-mono text-xs text-slate-500">5</td><td>Elif Yilmaz</td><td style="color:#8a2632">elif.y@</td><td class="font-mono">CS-26-0005</td><td><span class="chip chip-critical">Email malformed</span></td></tr>
+          <tr><td class="font-mono text-xs text-slate-500">6</td><td>Farah Karim</td><td class="text-slate-700">farah.k@email.com</td><td class="font-mono">CS-26-0006</td><td><span class="chip chip-positive">Valid</span></td></tr>
+          <tr><td colspan="5" class="text-center text-xs text-slate-500" style="background:#f3f0e8">678 further rows omitted from preview</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Form ingestion option -->
+    <div class="card p-6 mb-10">
+      <div class="flex items-start gap-4">
+        <input type="checkbox" class="mt-1" />
+        <div>
+          <div class="eyebrow mb-1">Optional Enhancement</div>
+          <h3 class="font-serif font-semibold mb-2">Application form ingestion</h3>
+          <p class="text-sm text-slate-700 leading-relaxed">When the roster includes a <code class="font-mono">form_url</code> column, the platform may read each candidate's prior application form to inform adaptive follow-up questions during the interview. Supported sources: Slate, Salesforce Education Cloud, Google Forms, Typeform.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-between items-center border-t border-slate-300 pt-6">
+      <a href="campaign-new-step1.html" class="btn-ghost">← Back</a>
+      <a href="campaign-new-step3.html" class="btn-primary">Continue to assessment rubric →</a>
+    </div>
+  </main>
+</body>
+</html>

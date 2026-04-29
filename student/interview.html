@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interview in progress · Northstar University</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: {
+        indigo:{50:'#f1f4f9',100:'#e1e8f0',200:'#c2cee0',300:'#93a6c2',400:'#5d779e',500:'#3a5577',600:'#1d3354',700:'#0f2744',800:'#0a1628',900:'#060e1c'},
+        slate:{50:'#faf8f3',100:'#f3f0e8',200:'#ece9e1',300:'#d8d3c8',400:'#b8b3a7',500:'#8a857a',600:'#5b5b58',700:'#4a4a48',800:'#2a2a28',900:'#1a1a1a'},
+        violet:{500:'#1d3354',600:'#0f2744'},
+        emerald:{50:'#f1f7f3',100:'#dde9e0',200:'#c5dccd',300:'#9bc3a8',400:'#6ba37d',500:'#2f6b3f',600:'#235132',700:'#1c4127',800:'#143019',900:'#0c1f10'},
+        amber:{50:'#fbf6e9',100:'#f5ebcc',200:'#e2d2a8',300:'#cfb87a',400:'#b89c4d',500:'#8c6a1f',600:'#735618',700:'#5b4413',800:'#43320d',900:'#2b2008'},
+        rose:{50:'#fbeef0',100:'#f3d8dd',200:'#e2c0c6',300:'#c8939e',400:'#a85f6d',500:'#8a2632',600:'#741e29',700:'#5b1820',800:'#421217',900:'#2a0c0e'}
+      },
+      fontFamily: { serif: ['"Source Serif 4"','Georgia','serif'] }
+    }}}
+  </script>
+  <link rel="stylesheet" href="../assets/shared.css" />
+  <style>
+    body { background: #0a1628; color: #fff; }
+    .ink-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.10); border-radius: 2px; }
+    .ink-rule { border-color: rgba(255,255,255,0.12); }
+    @keyframes wave { 0%,100% { height: 20%; } 50% { height: 80%; } }
+    .wave-bar { animation: wave 1.4s ease-in-out infinite; }
+    .timer-rule { background: linear-gradient(to right, #c5dccd 0%, #c5dccd 60%, rgba(255,255,255,0.12) 60%); }
+  </style>
+</head>
+<body class="min-h-screen">
+  <a href="../index.html" class="sitemap-pill" style="background:#fff;color:#0a1628;border-color:#fff;">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Sitemap
+  </a>
+
+  <!-- Status bar -->
+  <header class="border-b ink-rule" style="border-bottom-style:solid;border-bottom-width:1px;">
+    <div class="max-w-7xl mx-auto px-8 py-3 flex items-center justify-between text-sm">
+      <div class="flex items-center gap-4">
+        <div class="mark" style="background:#fff;color:#0a1628;">NS</div>
+        <div>
+          <div class="text-xs uppercase tracking-widest" style="color:#93a6c2">Northstar University · BSc Computer Science · Fall 2026</div>
+          <div class="font-serif font-semibold">Aanya Sharma · Applicant CS-26-0001</div>
+        </div>
+      </div>
+      <div class="flex items-center gap-5">
+        <span class="flex items-center gap-2 text-xs uppercase tracking-widest" style="color:#c5dccd">
+          <span class="w-1.5 h-1.5 rounded-full" style="background:#9bc3a8"></span>
+          Session recording
+        </span>
+        <span class="text-xs" style="color:#93a6c2">Reference SES-3F2A-2026</span>
+        <button class="text-xs uppercase tracking-widest border ink-rule px-3 py-1.5" style="border-style:solid;border-width:1px;">Assistance</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Progress strip -->
+  <div class="max-w-7xl mx-auto px-8 pt-6">
+    <div class="flex items-center justify-between text-xs mb-2" style="color:#93a6c2">
+      <span class="uppercase tracking-widest">Question 3 of 6 · Critical reasoning</span>
+      <span>Elapsed 06:24 · Estimated 14 minutes total</span>
+    </div>
+    <div class="grid grid-cols-6 gap-1.5">
+      <div class="h-0.5" style="background:#9bc3a8"></div>
+      <div class="h-0.5" style="background:#9bc3a8"></div>
+      <div class="h-0.5" style="background:#fff"></div>
+      <div class="h-0.5" style="background:rgba(255,255,255,0.15)"></div>
+      <div class="h-0.5" style="background:rgba(255,255,255,0.15)"></div>
+      <div class="h-0.5" style="background:rgba(255,255,255,0.15)"></div>
+    </div>
+  </div>
+
+  <!-- Main interview area -->
+  <main class="max-w-7xl mx-auto px-8 py-10 grid lg:grid-cols-3 gap-8">
+
+    <!-- Left: question + transcript -->
+    <section class="lg:col-span-2 space-y-5">
+
+      <!-- Question -->
+      <article class="ink-card p-9">
+        <div class="flex items-center justify-between mb-6">
+          <div class="flex items-center gap-3">
+            <span class="font-mono text-xs uppercase tracking-widest" style="color:#93a6c2">Q.03 / 06</span>
+            <span class="font-mono text-xs uppercase tracking-widest" style="color:#93a6c2">Critical reasoning</span>
+          </div>
+          <div class="flex items-center gap-2 text-xs" style="color:#c5dccd">
+            <span class="flex items-end gap-0.5 h-3">
+              <span class="wave-bar w-0.5" style="background:#c5dccd;animation-delay:0s"></span>
+              <span class="wave-bar w-0.5" style="background:#c5dccd;animation-delay:.15s"></span>
+              <span class="wave-bar w-0.5" style="background:#c5dccd;animation-delay:.3s"></span>
+              <span class="wave-bar w-0.5" style="background:#c5dccd;animation-delay:.45s"></span>
+            </span>
+            <span class="uppercase tracking-widest">Reading aloud</span>
+          </div>
+        </div>
+        <p class="font-serif text-3xl leading-snug">
+          Suppose you were given a budget of five hundred dollars to improve the experience of incoming first-year students at your school. Take me through what you would choose to do, and how you arrived at that decision.
+        </p>
+        <div class="mt-8 pt-5 border-t" style="border-color:rgba(255,255,255,0.10)">
+          <div class="flex items-center justify-between text-xs">
+            <div class="flex gap-3">
+              <button class="border ink-rule px-3 py-1.5 uppercase tracking-widest" style="border-style:solid;border-width:1px;">Repeat the question</button>
+              <button class="border ink-rule px-3 py-1.5 uppercase tracking-widest" style="border-style:solid;border-width:1px;">Pause for thirty seconds</button>
+            </div>
+            <span style="color:#93a6c2">No verbal interruption is permitted. Your response is being transcribed continuously.</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Transcript -->
+      <article class="ink-card p-7">
+        <div class="flex items-center justify-between mb-4 pb-3 border-b" style="border-color:rgba(255,255,255,0.10)">
+          <div class="text-xs uppercase tracking-widest" style="color:#93a6c2">Live transcription · Candidate response</div>
+          <button class="text-xs uppercase tracking-widest" style="color:#c2cee0">Flag transcription error</button>
+        </div>
+        <p class="text-base leading-relaxed" style="color:#e1e8f0">
+          To begin, I would not commit the budget without first understanding the actual difficulties first-year students encounter; a survey of the previous year's intake or a short conversation with senior peer mentors would establish that. With five hundred dollars I would consider two allocations:
+          <span style="background:rgba(255,255,255,0.08);padding:1px 4px;">approximately two hundred for a practical orientation kit — a campus directory, study planner, and a USB drive — and the remainder for a peer-led mentorship programme</span>
+          pairing each first-year with a senior student. If forced to choose only one of the two, I would retain the mentorship programme: a printed kit is a one-time gesture, whereas the relationship pays
+          <span style="color:#8a857a;font-style:italic">[transcription continuing…]</span>
+        </p>
+      </article>
+
+      <!-- Keyboard hint -->
+      <div class="text-xs flex items-center gap-3" style="color:#5d779e">
+        <span class="kbd" style="background:transparent;color:#c2cee0;border-color:rgba(255,255,255,0.18)">Space</span>
+        <span>Pause</span>
+        <span style="color:rgba(255,255,255,0.2)">·</span>
+        <span class="kbd" style="background:transparent;color:#c2cee0;border-color:rgba(255,255,255,0.18)">R</span>
+        <span>Repeat the question</span>
+        <span style="color:rgba(255,255,255,0.2)">·</span>
+        <span class="kbd" style="background:transparent;color:#c2cee0;border-color:rgba(255,255,255,0.18)">Esc</span>
+        <span>Conclude session early</span>
+      </div>
+    </section>
+
+    <!-- Right: monitor stack -->
+    <aside class="space-y-5">
+
+      <!-- Self camera -->
+      <div class="ink-card overflow-hidden">
+        <div class="aspect-video relative flex items-center justify-center" style="background:#060e1c">
+          <svg class="w-14 h-14" style="color:rgba(255,255,255,0.18)" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+          <span class="absolute top-3 left-3 text-xs uppercase tracking-widest font-semibold flex items-center gap-1.5" style="color:#fbeef0;background:rgba(138,38,50,0.85);padding:2px 8px;">
+            <span class="w-1.5 h-1.5 rounded-full" style="background:#fff"></span>
+            Recording
+          </span>
+          <span class="absolute bottom-3 right-3 text-xs" style="color:rgba(255,255,255,0.6)">Candidate camera</span>
+        </div>
+      </div>
+
+      <!-- Question timer -->
+      <div class="ink-card p-5">
+        <div class="text-xs uppercase tracking-widest mb-3" style="color:#93a6c2">Time on this question</div>
+        <div class="flex items-baseline justify-between">
+          <div class="font-serif text-4xl font-semibold tabular-nums">01:12</div>
+          <div class="font-mono text-xs" style="color:#93a6c2">of 02:00</div>
+        </div>
+        <div class="mt-3 h-1 timer-rule"></div>
+        <div class="mt-2 text-xs" style="color:#93a6c2">A wrap-up cue will be presented at 01:45.</div>
+      </div>
+
+      <!-- Audio monitor -->
+      <div class="ink-card p-5">
+        <div class="text-xs uppercase tracking-widest mb-3" style="color:#93a6c2">Audio status</div>
+        <div class="flex items-center justify-between mb-3">
+          <span class="text-sm" style="color:#e1e8f0">Microphone input</span>
+          <div class="flex items-end gap-0.5 h-4">
+            <div class="w-1 rounded-t" style="height:30%;background:#9bc3a8"></div>
+            <div class="w-1 rounded-t" style="height:55%;background:#9bc3a8"></div>
+            <div class="w-1 rounded-t" style="height:85%;background:#9bc3a8"></div>
+            <div class="w-1 rounded-t" style="height:60%;background:#9bc3a8"></div>
+            <div class="w-1 rounded-t" style="height:40%;background:#9bc3a8"></div>
+            <div class="w-1 rounded-t" style="height:70%;background:#9bc3a8"></div>
+          </div>
+        </div>
+        <div class="flex gap-2">
+          <button class="flex-1 border ink-rule py-2 text-xs uppercase tracking-widest" style="border-style:solid;border-width:1px;">Mute</button>
+          <button class="flex-1 border ink-rule py-2 text-xs uppercase tracking-widest" style="border-style:solid;border-width:1px;">Hide camera</button>
+        </div>
+      </div>
+
+      <!-- Submit -->
+      <a href="complete.html" class="block text-center font-semibold py-3 text-sm uppercase tracking-widest" style="background:#fff;color:#0a1628;">Conclude this response</a>
+      <div class="text-xs text-center" style="color:#5d779e">The platform will advance to the next question automatically when your response concludes.</div>
+
+      <!-- Confidentiality -->
+      <div class="text-xs leading-relaxed pt-4 border-t ink-rule" style="border-style:solid;border-width:1px;border-bottom:0;border-left:0;border-right:0;color:#93a6c2">
+        This session is confidential. The recording, transcript, and any annotations are held under Northstar University's data-retention policy and the platform's data processing addendum. The session reference is logged in your audit trail.
+      </div>
+    </aside>
+  </main>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Institutional dashboard · Northstar University</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: {
+        indigo:{50:'#f1f4f9',100:'#e1e8f0',200:'#c2cee0',300:'#93a6c2',400:'#5d779e',500:'#3a5577',600:'#1d3354',700:'#0f2744',800:'#0a1628',900:'#060e1c'},
+        slate:{50:'#faf8f3',100:'#f3f0e8',200:'#ece9e1',300:'#d8d3c8',400:'#b8b3a7',500:'#8a857a',600:'#5b5b58',700:'#4a4a48',800:'#2a2a28',900:'#1a1a1a'},
+        emerald:{50:'#f1f7f3',100:'#dde9e0',200:'#c5dccd',300:'#9bc3a8',400:'#6ba37d',500:'#2f6b3f',600:'#235132',700:'#1c4127',800:'#143019',900:'#0c1f10'},
+        amber:{50:'#fbf6e9',100:'#f5ebcc',200:'#e2d2a8',300:'#cfb87a',400:'#b89c4d',500:'#8c6a1f',600:'#735618',700:'#5b4413',800:'#43320d',900:'#2b2008'}
+      },
+      fontFamily: { serif: ['"Source Serif 4"','Georgia','serif'] }
+    }}}
+  </script>
+  <link rel="stylesheet" href="../assets/shared.css" />
+</head>
+<body class="bg-slate-50 min-h-screen">
+  <a href="../index.html" class="sitemap-pill">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Sitemap
+  </a>
+
+  <div class="flex min-h-screen">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-indigo-800 text-white flex flex-col">
+      <div class="px-5 py-5 border-b" style="border-color:rgba(255,255,255,0.08)">
+        <div class="flex items-center gap-2 mb-3">
+          <div class="mark" style="background:#fff;color:#0a1628;width:24px;height:24px;font-size:11px">NS</div>
+          <span class="text-xs uppercase tracking-widest" style="color:#93a6c2">Tenant</span>
+        </div>
+        <div class="font-serif font-semibold leading-tight">Northstar University</div>
+        <div class="text-xs mt-1" style="color:#93a6c2">Office of Admissions · Spring 2026 cycle</div>
+      </div>
+      <nav class="flex-1 p-3 text-sm">
+        <a href="dashboard.html" class="flex items-center justify-between px-3 py-2 mb-1" style="background:rgba(255,255,255,0.08);border-left:2px solid #fff;">
+          Dashboard <span class="text-xs" style="color:#93a6c2">D</span>
+        </a>
+        <a href="campaign-new-step1.html" class="flex items-center justify-between px-3 py-2 mb-1 hover:bg-white/5" style="color:#c2cee0">New campaign <span class="text-xs">N</span></a>
+        <a href="campaign-monitor.html" class="flex items-center justify-between px-3 py-2 mb-1 hover:bg-white/5" style="color:#c2cee0">Active campaigns</a>
+        <a href="../results/overview.html" class="flex items-center justify-between px-3 py-2 mb-1 hover:bg-white/5" style="color:#c2cee0">Cohort results</a>
+        <div class="pt-3 mt-3 border-t" style="border-color:rgba(255,255,255,0.08)">
+          <div class="px-3 py-1 text-xs uppercase tracking-widest" style="color:#5d779e">Administration</div>
+          <a href="#" class="flex items-center justify-between px-3 py-2 mb-1 hover:bg-white/5" style="color:#c2cee0">Faculty &amp; reviewers</a>
+          <a href="#" class="flex items-center justify-between px-3 py-2 mb-1 hover:bg-white/5" style="color:#c2cee0">Audit log</a>
+          <a href="#" class="flex items-center justify-between px-3 py-2 mb-1 hover:bg-white/5" style="color:#c2cee0">Tenant settings</a>
+        </div>
+      </nav>
+      <div class="p-3 border-t" style="border-color:rgba(255,255,255,0.08)">
+        <div class="border p-3" style="border-color:rgba(255,255,255,0.10)">
+          <div class="text-xs uppercase tracking-widest mb-2" style="color:#93a6c2">Cycle assessment quota</div>
+          <div class="flex items-baseline justify-between mb-1"><span class="font-serif text-2xl font-semibold">1,235</span><span class="text-xs" style="color:#93a6c2">/ 2,000</span></div>
+          <div class="w-full h-1" style="background:rgba(255,255,255,0.1)"><div class="h-1" style="width:62%;background:#fff"></div></div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <main class="flex-1">
+      <header class="border-b border-slate-300 bg-white">
+        <div class="px-10 py-3 flex items-center justify-between text-xs">
+          <span class="text-slate-500">Spring 2026 admissions cycle</span>
+          <div class="flex items-center gap-4">
+            <span class="text-slate-600">Dr. Eleanor Whitfield · Associate Dean</span>
+            <button class="text-slate-500 hover:text-indigo-700">Sign out</button>
+          </div>
+        </div>
+        <div class="px-10 py-7 flex items-end justify-between">
+          <div>
+            <div class="eyebrow mb-2">Institutional Dashboard</div>
+            <h1 class="font-serif text-3xl font-semibold leading-tight">Spring 2026 admissions cycle</h1>
+            <p class="text-sm text-slate-600 mt-1">Three campaigns active across two faculties.</p>
+          </div>
+          <a href="campaign-new-step1.html" class="btn-primary">Initiate new campaign</a>
+        </div>
+      </header>
+
+      <div class="px-10 py-10 space-y-8">
+
+        <!-- Stats -->
+        <section class="grid grid-cols-4 border border-slate-300 divide-x divide-slate-300 bg-white">
+          <div class="p-6">
+            <div class="eyebrow text-slate-500 mb-2">Active campaigns</div>
+            <div class="font-serif text-3xl font-semibold tabular-nums">3</div>
+            <div class="text-xs text-slate-600 mt-1">Across BSc, MBA, PhD</div>
+          </div>
+          <div class="p-6">
+            <div class="eyebrow text-slate-500 mb-2">Candidates invited</div>
+            <div class="font-serif text-3xl font-semibold tabular-nums">1,235</div>
+            <div class="text-xs text-slate-600 mt-1">Cycle to date</div>
+          </div>
+          <div class="p-6">
+            <div class="eyebrow text-slate-500 mb-2">Interviews completed</div>
+            <div class="font-serif text-3xl font-semibold tabular-nums text-emerald-700">847</div>
+            <div class="text-xs text-slate-600 mt-1">68.6% of invited</div>
+          </div>
+          <div class="p-6">
+            <div class="eyebrow text-slate-500 mb-2">Mean time to score</div>
+            <div class="font-serif text-3xl font-semibold tabular-nums">7m</div>
+            <div class="text-xs text-slate-600 mt-1">Per completed interview</div>
+          </div>
+        </section>
+
+        <!-- Campaigns table -->
+        <section class="card overflow-hidden">
+          <div class="px-6 py-5 border-b border-slate-300 flex items-center justify-between">
+            <div>
+              <div class="eyebrow">Campaign Register</div>
+              <div class="text-sm text-slate-600 mt-1">Cycle Spring 2026 — chronological order.</div>
+            </div>
+            <input class="border border-slate-300 px-3 py-1.5 text-sm" placeholder="Search by campaign name…" />
+          </div>
+          <table class="tbl-corp">
+            <thead><tr><th>Campaign</th><th>Stream</th><th>Candidates</th><th>Progress</th><th>Deadline</th><th>Status</th><th></th></tr></thead>
+            <tbody>
+              <tr>
+                <td class="font-serif font-semibold">MBA 2026 Cohort</td>
+                <td><span class="chip chip-primary">MBA</span></td>
+                <td class="tabular-nums">412</td>
+                <td class="w-64">
+                  <div class="flex items-center gap-3"><div class="flex-1 bg-slate-200 h-1.5"><div class="h-1.5" style="width:74%;background:#1d3354"></div></div><span class="text-xs text-slate-600 tabular-nums">74%</span></div>
+                </td>
+                <td class="text-slate-600">12 May 2026</td>
+                <td><span class="chip chip-positive">Live</span></td>
+                <td><a href="campaign-monitor.html" class="text-indigo-700 font-medium">Monitor</a></td>
+              </tr>
+              <tr>
+                <td class="font-serif font-semibold">CS Undergraduate · Fall 2026</td>
+                <td><span class="chip chip-primary">Undergrad</span></td>
+                <td class="tabular-nums">684</td>
+                <td class="w-64">
+                  <div class="flex items-center gap-3"><div class="flex-1 bg-slate-200 h-1.5"><div class="h-1.5" style="width:55%;background:#1d3354"></div></div><span class="text-xs text-slate-600 tabular-nums">55%</span></div>
+                </td>
+                <td class="text-slate-600">28 May 2026</td>
+                <td><span class="chip chip-positive">Live</span></td>
+                <td><a href="campaign-monitor.html" class="text-indigo-700 font-medium">Monitor</a></td>
+              </tr>
+              <tr>
+                <td class="font-serif font-semibold">PhD Cohort 2026</td>
+                <td><span class="chip chip-muted">Doctoral</span></td>
+                <td class="tabular-nums">139</td>
+                <td class="w-64">
+                  <div class="flex items-center gap-3"><div class="flex-1 bg-slate-200 h-1.5"><div class="h-1.5" style="width:18%;background:#1d3354"></div></div><span class="text-xs text-slate-600 tabular-nums">18%</span></div>
+                </td>
+                <td class="text-slate-600">04 Jun 2026</td>
+                <td><span class="chip chip-warning">Just commenced</span></td>
+                <td><a href="campaign-monitor.html" class="text-indigo-700 font-medium">Monitor</a></td>
+              </tr>
+              <tr>
+                <td class="font-serif font-semibold">Data Science Bootcamp · Q1</td>
+                <td><span class="chip chip-muted">Professional</span></td>
+                <td class="tabular-nums">220</td>
+                <td class="w-64">
+                  <div class="flex items-center gap-3"><div class="flex-1 bg-slate-200 h-1.5"><div class="h-1.5" style="width:100%;background:#8a857a"></div></div><span class="text-xs text-slate-600">Closed</span></div>
+                </td>
+                <td class="text-slate-600">02 Apr 2026</td>
+                <td><span class="chip chip-muted">Closed</span></td>
+                <td><a href="../results/overview.html" class="text-indigo-700 font-medium">View results</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+      </div>
+    </main>
+  </div>
+</body>
+</html>

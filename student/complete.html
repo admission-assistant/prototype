@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Submission acknowledged · Northstar University</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: {
+        indigo:{50:'#f1f4f9',100:'#e1e8f0',200:'#c2cee0',300:'#93a6c2',400:'#5d779e',500:'#3a5577',600:'#1d3354',700:'#0f2744',800:'#0a1628',900:'#060e1c'},
+        slate:{50:'#faf8f3',100:'#f3f0e8',200:'#ece9e1',300:'#d8d3c8',400:'#b8b3a7',500:'#8a857a',600:'#5b5b58',700:'#4a4a48',800:'#2a2a28',900:'#1a1a1a'},
+        emerald:{50:'#f1f7f3',100:'#dde9e0',200:'#c5dccd',300:'#9bc3a8',500:'#2f6b3f',600:'#235132',700:'#1c4127'}
+      },
+      fontFamily: { serif: ['"Source Serif 4"','Georgia','serif'] }
+    }}}
+  </script>
+  <link rel="stylesheet" href="../assets/shared.css" />
+</head>
+<body class="bg-slate-50 min-h-screen">
+  <a href="../index.html" class="sitemap-pill">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Sitemap
+  </a>
+
+  <header class="border-b border-slate-300 bg-white">
+    <div class="max-w-3xl mx-auto px-8 py-4 flex items-center gap-3">
+      <div class="mark" style="background:#1e40af">NS</div>
+      <div>
+        <div class="font-serif font-semibold leading-none">Northstar University</div>
+        <div class="text-xs text-slate-500 mt-1">Office of Admissions</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-2xl mx-auto px-8 py-16">
+    <div class="card p-10 mb-8">
+      <div class="eyebrow text-emerald-700 mb-3">Submission Acknowledged</div>
+      <h1 class="font-serif text-3xl font-semibold mb-3 leading-tight">Thank you for completing your interview, Aanya.</h1>
+      <p class="text-slate-700 mb-8 leading-relaxed">Your response has been recorded and submitted to Northstar University's Office of Admissions. A copy of this acknowledgement will be sent to your email address shortly.</p>
+
+      <table class="tbl-corp mb-8">
+        <tbody>
+          <tr><td class="text-slate-600">Submitted at</td><td class="text-right font-semibold">29 Apr 2026, 16:18 GMT</td></tr>
+          <tr><td class="text-slate-600">Document reference</td><td class="text-right font-mono">CS-26-0001-S1</td></tr>
+          <tr><td class="text-slate-600">Total duration</td><td class="text-right font-semibold">14 minutes, 36 seconds</td></tr>
+          <tr><td class="text-slate-600">Questions answered</td><td class="text-right font-semibold">6 of 6</td></tr>
+          <tr><td class="text-slate-600">Identity verification</td><td class="text-right text-emerald-700 font-semibold">Confirmed</td></tr>
+        </tbody>
+      </table>
+
+      <div class="border-l-2 border-indigo-700 pl-5 mb-8">
+        <div class="eyebrow mb-3">What follows from here</div>
+        <ol class="text-sm text-slate-700 space-y-3">
+          <li><strong class="font-serif">i.</strong> Your responses will be evaluated against Northstar's published assessment rubric within ten minutes.</li>
+          <li><strong class="font-serif">ii.</strong> A confirmation of receipt has been sent to your email address.</li>
+          <li><strong class="font-serif">iii.</strong> The Office of Admissions will review all submissions following the close of the cycle on 12 May 2026.</li>
+          <li><strong class="font-serif">iv.</strong> You will be informed of next steps directly by Northstar within four weeks of the closing date.</li>
+        </ol>
+      </div>
+
+      <p class="text-xs text-slate-600 leading-relaxed border-t border-slate-200 pt-5">If you wish to dispute any element of the recording, transcript, or the conduct of the interview, you may do so in writing within fourteen days to the Office of Admissions at <a href="#" class="underline">admissions@northstar.edu</a>, citing your document reference above.</p>
+    </div>
+
+    <!-- Optional feedback -->
+    <div class="card p-7">
+      <div class="eyebrow mb-2">Optional · Candidate Experience Feedback</div>
+      <p class="text-sm text-slate-700 mb-5 leading-relaxed">Feedback is anonymised and used only to improve the platform. It plays no role in your admissions evaluation.</p>
+      <div class="mb-5">
+        <div class="text-xs font-semibold text-slate-700 mb-2 uppercase tracking-wider">In your view, how fair was the interview process?</div>
+        <div class="grid grid-cols-4 gap-px bg-slate-300 border border-slate-300">
+          <button class="bg-white py-3 text-sm hover:bg-slate-100">Very unfair</button>
+          <button class="bg-white py-3 text-sm hover:bg-slate-100">Somewhat unfair</button>
+          <button class="bg-emerald-50 py-3 text-sm font-semibold border-emerald-700" style="border-width:2px;color:#235132">Mostly fair</button>
+          <button class="bg-white py-3 text-sm hover:bg-slate-100">Very fair</button>
+        </div>
+      </div>
+      <div class="mb-5">
+        <div class="text-xs font-semibold text-slate-700 mb-2 uppercase tracking-wider">Comments (optional)</div>
+        <textarea rows="4" class="w-full border border-slate-300 px-3 py-2 text-sm" placeholder="If anything was unclear, or if you wish to add context to a particular response, please describe it here."></textarea>
+      </div>
+      <button class="btn-primary">Submit feedback</button>
+    </div>
+
+    <p class="text-center text-xs text-slate-500 mt-10">You may safely close this window.</p>
+  </main>
+</body>
+</html>

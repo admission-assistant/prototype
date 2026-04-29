@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admissions Assistant — Structured AI interviews for university admissions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: {
+        indigo:{50:'#f1f4f9',100:'#e1e8f0',200:'#c2cee0',300:'#93a6c2',400:'#5d779e',500:'#3a5577',600:'#1d3354',700:'#0f2744',800:'#0a1628',900:'#060e1c'},
+        slate:{50:'#faf8f3',100:'#f3f0e8',200:'#ece9e1',300:'#d8d3c8',400:'#b8b3a7',500:'#8a857a',600:'#5b5b58',700:'#4a4a48',800:'#2a2a28',900:'#1a1a1a'},
+        violet:{500:'#1d3354',600:'#0f2744'},
+        emerald:{50:'#f1f7f3',100:'#dde9e0',200:'#c5dccd',300:'#9bc3a8',400:'#6ba37d',500:'#2f6b3f',600:'#235132',700:'#1c4127',800:'#143019',900:'#0c1f10'},
+        amber:{50:'#fbf6e9',100:'#f5ebcc',200:'#e2d2a8',300:'#cfb87a',400:'#b89c4d',500:'#8c6a1f',600:'#735618',700:'#5b4413',800:'#43320d',900:'#2b2008'},
+        rose:{50:'#fbeef0',100:'#f3d8dd',200:'#e2c0c6',300:'#c8939e',400:'#a85f6d',500:'#8a2632',600:'#741e29',700:'#5b1820',800:'#421217',900:'#2a0c0e'}
+      },
+      fontFamily: { serif: ['"Source Serif 4"','Georgia','serif'] }
+    }}}
+  </script>
+  <link rel="stylesheet" href="assets/shared.css" />
+</head>
+<body class="bg-white text-slate-900">
+  <a href="index.html" class="sitemap-pill">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Sitemap
+  </a>
+
+  <!-- Top utility bar -->
+  <div class="border-b border-slate-200 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-8 py-2 flex items-center justify-between text-xs text-slate-600">
+      <span>For accredited institutions of higher education</span>
+      <span class="flex items-center gap-4">
+        <a href="#" class="hover:text-slate-900">Institutional clients</a>
+        <span class="text-slate-300">|</span>
+        <a href="#" class="hover:text-slate-900">Research &amp; methodology</a>
+        <span class="text-slate-300">|</span>
+        <a href="admin/signin.html" class="hover:text-slate-900">Sign in</a>
+      </span>
+    </div>
+  </div>
+
+  <!-- Masthead -->
+  <header class="border-b border-slate-300 bg-white">
+    <div class="max-w-7xl mx-auto px-8 py-5 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="mark">AA</div>
+        <div>
+          <div class="font-serif font-semibold text-lg leading-none">Admissions Assistant</div>
+          <div class="eyebrow mt-1">Structured Interview Platform</div>
+        </div>
+      </div>
+      <nav class="hidden md:flex items-center gap-8 text-sm text-slate-700">
+        <a href="#methodology" class="hover:text-indigo-700">Methodology</a>
+        <a href="#programmes" class="hover:text-indigo-700">Programmes</a>
+        <a href="#governance" class="hover:text-indigo-700">Governance</a>
+        <a href="#engagement" class="hover:text-indigo-700">Engagement</a>
+        <a href="#contact" class="btn-primary">Request a consultation</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-white">
+    <div class="max-w-7xl mx-auto px-8 pt-16 pb-20 grid lg:grid-cols-12 gap-12 items-start">
+      <div class="lg:col-span-7">
+        <div class="eyebrow mb-5">A Structured Assessment Platform</div>
+        <h1 class="font-serif text-5xl lg:text-6xl font-semibold tracking-tight leading-[1.05] mb-6">
+          A consistent, defensible interview for every applicant.
+        </h1>
+        <p class="text-lg text-slate-700 mb-8 max-w-2xl leading-relaxed">
+          Admissions Assistant conducts structured, recorded interviews at scale and returns rubric-anchored evaluations to your committee. Designed in collaboration with admissions deans and assessment researchers; engineered for the regulatory environment of higher education.
+        </p>
+        <div class="flex items-center gap-4 mb-10">
+          <a href="#contact" class="btn-primary">Request a consultation</a>
+          <a href="#methodology" class="btn-secondary">Read the methodology</a>
+        </div>
+        <div class="border-t border-slate-200 pt-6 grid grid-cols-3 gap-6 max-w-2xl">
+          <div>
+            <div class="font-serif text-3xl font-semibold">12,400+</div>
+            <div class="text-xs text-slate-600 mt-1">Interviews conducted across pilot institutions</div>
+          </div>
+          <div>
+            <div class="font-serif text-3xl font-semibold">93%</div>
+            <div class="text-xs text-slate-600 mt-1">Faculty agreement with composite scoring (n=42)</div>
+          </div>
+          <div>
+            <div class="font-serif text-3xl font-semibold">62%</div>
+            <div class="text-xs text-slate-600 mt-1">Reduction in faculty interview hours per cycle</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pull-quote block -->
+      <aside class="lg:col-span-5">
+        <div class="card p-8 border-l-4 border-l-indigo-700">
+          <div class="eyebrow mb-4 text-slate-600">Institutional Testimony</div>
+          <blockquote class="font-serif text-xl leading-snug text-slate-900 mb-5">
+            "We needed to interview every applicant — not only those who made the shortlist. The platform gave us evidence-anchored evaluations our committee could defend in writing."
+          </blockquote>
+          <div class="border-t border-slate-200 pt-4 text-sm">
+            <div class="font-semibold">Dr. Eleanor Whitfield</div>
+            <div class="text-slate-600">Associate Dean of Admissions · Faculty of Engineering</div>
+            <div class="text-slate-500 text-xs mt-1">Pilot institution · Spring 2026 cohort</div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Methodology / How it works -->
+  <section id="methodology" class="border-t border-slate-300 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-8 py-20">
+      <div class="grid lg:grid-cols-12 gap-10 mb-12">
+        <div class="lg:col-span-4">
+          <div class="eyebrow mb-3">Methodology</div>
+          <h2 class="font-serif text-3xl font-semibold leading-tight">An interview process held to the standards your committee already uses.</h2>
+        </div>
+        <p class="lg:col-span-8 text-slate-700 leading-relaxed self-end">
+          Each interview is conducted in three sequenced phases. The methodology is documented, auditable, and aligned with the structured-interview literature in selection science (Campion, Pulakos, et al.). Institutions retain full ownership of the rubric and the final determination.
+        </p>
+      </div>
+
+      <ol class="grid lg:grid-cols-3 gap-px bg-slate-300 border border-slate-300">
+        <li class="bg-white p-8">
+          <div class="font-mono text-xs text-slate-500 mb-2">PHASE 01</div>
+          <h3 class="font-serif text-xl font-semibold mb-3">Cohort intake &amp; configuration</h3>
+          <p class="text-sm text-slate-700 leading-relaxed">
+            The institution submits the applicant roster as a structured dataset. The admissions office configures the rubric — criteria, weights, scoring scale — drawn from a default appropriate to the programme stream, or from the institution's own assessment framework.
+          </p>
+        </li>
+        <li class="bg-white p-8">
+          <div class="font-mono text-xs text-slate-500 mb-2">PHASE 02</div>
+          <h3 class="font-serif text-xl font-semibold mb-3">Structured candidate interview</h3>
+          <p class="text-sm text-slate-700 leading-relaxed">
+            Each candidate completes a recorded interview from a verified browser session. Questions are drawn from a peer-reviewed bank, optionally extended with one adaptive follow-up per topic. Interviews are transcribed in real time and stored under the institution's data residency policy.
+          </p>
+        </li>
+        <li class="bg-white p-8">
+          <div class="font-mono text-xs text-slate-500 mb-2">PHASE 03</div>
+          <h3 class="font-serif text-xl font-semibold mb-3">Evaluation &amp; faculty review</h3>
+          <p class="text-sm text-slate-700 leading-relaxed">
+            Each transcript is scored against the institution's rubric. Every score is accompanied by a verbatim quotation from the candidate. Faculty review the dossier, override scores where warranted, and record the determination. The platform is decision-support; the institution decides.
+          </p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Programme streams -->
+  <section id="programmes" class="border-t border-slate-300 bg-white">
+    <div class="max-w-7xl mx-auto px-8 py-20">
+      <div class="grid lg:grid-cols-12 gap-10 mb-10">
+        <div class="lg:col-span-4">
+          <div class="eyebrow mb-3">Programme streams</div>
+          <h2 class="font-serif text-3xl font-semibold leading-tight">Default rubrics calibrated to each level of study.</h2>
+        </div>
+        <p class="lg:col-span-8 text-slate-700 leading-relaxed self-end">
+          Each programme stream ships with a default question bank and rubric calibrated to the seniority and subject demands of the level. Institutions adopt, adjust, or replace these defaults entirely.
+        </p>
+      </div>
+
+      <div class="border-t border-slate-300">
+        <table class="tbl-corp">
+          <thead><tr><th>Stream</th><th>Typical institutional use</th><th>Duration</th><th>Default rubric emphasis</th></tr></thead>
+          <tbody>
+            <tr><td class="font-semibold font-serif">Undergraduate</td><td class="text-slate-700">BSc, BA, BBA, BE</td><td class="text-slate-700">12–15 minutes</td><td class="text-slate-700">Communication, foundational reasoning, motivation</td></tr>
+            <tr><td class="font-semibold font-serif">Graduate / Master's</td><td class="text-slate-700">MSc, MA, MTech</td><td class="text-slate-700">18–22 minutes</td><td class="text-slate-700">Subject depth, prior work, research clarity</td></tr>
+            <tr><td class="font-semibold font-serif">MBA / Executive</td><td class="text-slate-700">MBA, EMBA, PGDM</td><td class="text-slate-700">25–30 minutes</td><td class="text-slate-700">Leadership, decision-making, career narrative</td></tr>
+            <tr><td class="font-semibold font-serif">Doctoral / Research</td><td class="text-slate-700">PhD, MPhil, DPhil</td><td class="text-slate-700">30–40 minutes</td><td class="text-slate-700">Research rigour, originality, supervisor fit</td></tr>
+            <tr><td class="font-semibold font-serif">Professional / Continuing</td><td class="text-slate-700">Certifications, intensive programmes</td><td class="text-slate-700">10–15 minutes</td><td class="text-slate-700">Aptitude, prior exposure, commitment</td></tr>
+            <tr><td class="font-semibold font-serif">Custom</td><td class="text-slate-700">Institution-defined</td><td class="text-slate-700">Configurable</td><td class="text-slate-700">Bespoke rubric and question bank</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Governance -->
+  <section id="governance" class="border-t border-slate-300 bg-indigo-800 text-white">
+    <div class="max-w-7xl mx-auto px-8 py-20">
+      <div class="grid lg:grid-cols-12 gap-10">
+        <div class="lg:col-span-5">
+          <div class="eyebrow mb-3 text-slate-300" style="color:#93a6c2">Governance &amp; assurance</div>
+          <h2 class="font-serif text-3xl font-semibold leading-tight mb-6">Built for institutions that operate under regulatory scrutiny.</h2>
+          <p class="text-slate-200 leading-relaxed mb-6 text-sm" style="color:#c2cee0">
+            Higher-education admissions are governed by FERPA, GDPR, the EU AI Act, the New York Automated Employment Decision Tool law, and the institution's own academic policies. Admissions Assistant is engineered to satisfy each — and to give your office the audit artefacts to demonstrate it.
+          </p>
+        </div>
+        <div class="lg:col-span-7">
+          <dl class="grid sm:grid-cols-2 gap-px bg-indigo-700 border border-indigo-700">
+            <div class="bg-indigo-800 p-6">
+              <dt class="font-serif text-base font-semibold mb-1">Data residency</dt>
+              <dd class="text-sm text-slate-200" style="color:#c2cee0">Hosting in the United States, European Union, or India per institutional preference. Data is encrypted in transit (TLS 1.3) and at rest (AES-256).</dd>
+            </div>
+            <div class="bg-indigo-800 p-6">
+              <dt class="font-serif text-base font-semibold mb-1">Evidentiary scoring</dt>
+              <dd class="text-sm text-slate-200" style="color:#c2cee0">Every score traces to a verbatim quotation from the candidate transcript. Auditable end to end.</dd>
+            </div>
+            <div class="bg-indigo-800 p-6">
+              <dt class="font-serif text-base font-semibold mb-1">Bias audit per cycle</dt>
+              <dd class="text-sm text-slate-200" style="color:#c2cee0">A formal disparate-impact analysis is delivered with the cycle results, prepared in line with selection-science guidance.</dd>
+            </div>
+            <div class="bg-indigo-800 p-6">
+              <dt class="font-serif text-base font-semibold mb-1">Human determination</dt>
+              <dd class="text-sm text-slate-200" style="color:#c2cee0">The platform is decision-support. Faculty review, override, and record the final admissions decision under the institution's policy.</dd>
+            </div>
+            <div class="bg-indigo-800 p-6">
+              <dt class="font-serif text-base font-semibold mb-1">Standards &amp; certifications</dt>
+              <dd class="text-sm text-slate-200" style="color:#c2cee0">SOC 2 Type II (in progress), ISO 27001 alignment, FERPA &amp; GDPR data-processing terms, EU AI Act compliance posture.</dd>
+            </div>
+            <div class="bg-indigo-800 p-6">
+              <dt class="font-serif text-base font-semibold mb-1">Operational reliability</dt>
+              <dd class="text-sm text-slate-200" style="color:#c2cee0">99.9% availability during admissions windows; concurrent capacity of 5,000 sessions; resumable interviews on connection loss.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Engagement model -->
+  <section id="engagement" class="border-t border-slate-300 bg-white">
+    <div class="max-w-7xl mx-auto px-8 py-20">
+      <div class="grid lg:grid-cols-12 gap-10 mb-10">
+        <div class="lg:col-span-4">
+          <div class="eyebrow mb-3">Engagement</div>
+          <h2 class="font-serif text-3xl font-semibold leading-tight">Three tiers of institutional engagement.</h2>
+        </div>
+        <p class="lg:col-span-8 text-slate-700 leading-relaxed self-end">
+          We engage with institutions on a per-cycle basis. There are no platform minimums and no multi-year commitments are required to begin. Pricing reflects the volume of candidates assessed.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-px bg-slate-300 border border-slate-300">
+        <article class="bg-white p-8">
+          <div class="eyebrow mb-2 text-slate-500">Tier I</div>
+          <h3 class="font-serif text-2xl font-semibold mb-2">Pilot</h3>
+          <p class="text-sm text-slate-700 mb-6 leading-relaxed">A no-fee evaluation programme for institutions assessing the platform against an upcoming cycle. Up to 100 candidates included.</p>
+          <ul class="text-sm text-slate-700 space-y-2 mb-8">
+            <li class="border-t border-slate-200 pt-2">Full configuration of one programme stream</li>
+            <li class="border-t border-slate-200 pt-2">Standard rubrics and question banks</li>
+            <li class="border-t border-slate-200 pt-2">Cycle bias-audit report</li>
+          </ul>
+          <a href="#contact" class="btn-secondary">Request a pilot</a>
+        </article>
+        <article class="bg-white p-8 border-t-2 border-t-indigo-700 lg:border-t lg:border-t-slate-300 lg:border-l-2 lg:border-l-indigo-700">
+          <div class="eyebrow mb-2" style="color:#0f2744">Tier II · Standard</div>
+          <h3 class="font-serif text-2xl font-semibold mb-2">Per-cycle engagement</h3>
+          <p class="text-sm text-slate-700 mb-6 leading-relaxed">For institutions running one or more programmes per cycle. Indicative pricing of USD 8 per assessed candidate, with volume terms above 1,000.</p>
+          <ul class="text-sm text-slate-700 space-y-2 mb-8">
+            <li class="border-t border-slate-200 pt-2">Multiple parallel programme streams</li>
+            <li class="border-t border-slate-200 pt-2">Custom rubric authoring &amp; review</li>
+            <li class="border-t border-slate-200 pt-2">Dedicated success-engineering contact</li>
+          </ul>
+          <a href="#contact" class="btn-primary">Discuss the engagement</a>
+        </article>
+        <article class="bg-white p-8">
+          <div class="eyebrow mb-2 text-slate-500">Tier III</div>
+          <h3 class="font-serif text-2xl font-semibold mb-2">Enterprise</h3>
+          <p class="text-sm text-slate-700 mb-6 leading-relaxed">For multi-faculty institutions, system-wide deployments, and engagements requiring custom integrations. Pricing on request.</p>
+          <ul class="text-sm text-slate-700 space-y-2 mb-8">
+            <li class="border-t border-slate-200 pt-2">SAML SSO, SCIM provisioning</li>
+            <li class="border-t border-slate-200 pt-2">Slate / Salesforce Education Cloud integration</li>
+            <li class="border-t border-slate-200 pt-2">Bespoke service-level agreement</li>
+          </ul>
+          <a href="#contact" class="btn-secondary">Speak with us</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / CTA -->
+  <section id="contact" class="border-t border-slate-300 bg-slate-50">
+    <div class="max-w-4xl mx-auto px-8 py-16 text-center">
+      <div class="eyebrow mb-3">Begin a Conversation</div>
+      <h2 class="font-serif text-3xl font-semibold leading-tight mb-4">Discuss your forthcoming cycle with our institutional team.</h2>
+      <p class="text-slate-700 leading-relaxed mb-8 max-w-2xl mx-auto">
+        We will ask about the programme stream, applicant volume, and assessment criteria already in use at your institution, and return a written engagement memorandum within five working days.
+      </p>
+      <a href="admin/signin.html" class="btn-primary">Request a consultation</a>
+    </div>
+  </section>
+
+  <footer class="inst-footer">
+    <div class="max-w-7xl mx-auto px-8 py-8 grid md:grid-cols-4 gap-8">
+      <div>
+        <div class="flex items-center gap-2 mb-3"><div class="mark" style="width:24px;height:24px;font-size:11px">AA</div><span class="font-serif font-semibold text-slate-900">Admissions Assistant</span></div>
+        <div>An assessment platform for accredited institutions of higher education.</div>
+      </div>
+      <div>
+        <div class="font-semibold text-slate-700 mb-2">Platform</div>
+        <ul class="space-y-1.5"><li><a href="#methodology">Methodology</a></li><li><a href="#programmes">Programme streams</a></li><li><a href="#governance">Governance</a></li></ul>
+      </div>
+      <div>
+        <div class="font-semibold text-slate-700 mb-2">Institutional</div>
+        <ul class="space-y-1.5"><li><a href="#">Research papers</a></li><li><a href="#">Implementation guidance</a></li><li><a href="#">Bias-audit framework</a></li></ul>
+      </div>
+      <div>
+        <div class="font-semibold text-slate-700 mb-2">Compliance</div>
+        <ul class="space-y-1.5"><li><a href="#">Privacy notice</a></li><li><a href="#">Data processing addendum</a></li><li><a href="#">Security &amp; certifications</a></li><li><a href="#">EU AI Act statement</a></li></ul>
+      </div>
+    </div>
+    <div class="border-t border-slate-300">
+      <div class="max-w-7xl mx-auto px-8 py-4 flex flex-wrap items-center justify-between gap-4">
+        <span>© 2026 Admissions Assistant Pte. Ltd. · Registered in Singapore · UEN 202612345A</span>
+        <span>Prepared for institutional review · prototype build 0.2</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

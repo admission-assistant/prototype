@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New campaign · Review &amp; commence · Admissions Assistant</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: {
+        indigo:{50:'#f1f4f9',100:'#e1e8f0',200:'#c2cee0',300:'#93a6c2',400:'#5d779e',500:'#3a5577',600:'#1d3354',700:'#0f2744',800:'#0a1628',900:'#060e1c'},
+        slate:{50:'#faf8f3',100:'#f3f0e8',200:'#ece9e1',300:'#d8d3c8',400:'#b8b3a7',500:'#8a857a',600:'#5b5b58',700:'#4a4a48',800:'#2a2a28',900:'#1a1a1a'},
+        emerald:{50:'#f1f7f3',100:'#dde9e0',200:'#c5dccd',300:'#9bc3a8',400:'#6ba37d',500:'#2f6b3f',600:'#235132',700:'#1c4127'},
+        amber:{50:'#fbf6e9',100:'#f5ebcc',200:'#e2d2a8',300:'#cfb87a',400:'#b89c4d',500:'#8c6a1f',600:'#735618',700:'#5b4413'}
+      },
+      fontFamily: { serif: ['"Source Serif 4"','Georgia','serif'] }
+    }}}
+  </script>
+  <link rel="stylesheet" href="../assets/shared.css" />
+</head>
+<body class="bg-slate-50 min-h-screen">
+  <a href="../index.html" class="sitemap-pill">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Sitemap
+  </a>
+
+  <header class="border-b border-slate-300 bg-white">
+    <div class="max-w-6xl mx-auto px-8 py-3 flex items-center justify-between text-xs">
+      <a href="campaign-new-step4.html" class="text-slate-600 hover:text-indigo-700">← Invitation</a>
+    </div>
+    <div class="max-w-6xl mx-auto px-8 py-6">
+      <div class="eyebrow mb-2">CS Undergraduate · Fall 2026 · Step 5 of 5</div>
+      <h1 class="font-serif text-3xl font-semibold leading-tight">Review &amp; commence</h1>
+    </div>
+    <div class="max-w-6xl mx-auto px-8 pb-5">
+      <ol class="grid grid-cols-5 border border-slate-300 divide-x divide-slate-300">
+        <li class="px-4 py-3 bg-emerald-50"><span class="font-mono text-xs text-emerald-700">01 ✓</span><div class="text-emerald-700 font-medium">Stream</div></li>
+        <li class="px-4 py-3 bg-emerald-50"><span class="font-mono text-xs text-emerald-700">02 ✓</span><div class="text-emerald-700 font-medium">Applicants</div></li>
+        <li class="px-4 py-3 bg-emerald-50"><span class="font-mono text-xs text-emerald-700">03 ✓</span><div class="text-emerald-700 font-medium">Rubric</div></li>
+        <li class="px-4 py-3 bg-emerald-50"><span class="font-mono text-xs text-emerald-700">04 ✓</span><div class="text-emerald-700 font-medium">Invitation</div></li>
+        <li class="px-4 py-3 bg-indigo-800 text-white"><span class="font-mono text-xs" style="color:#93a6c2">05</span><div class="font-serif font-semibold">Commence</div></li>
+      </ol>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-8 py-10">
+    <p class="text-slate-700 mb-8 max-w-3xl leading-relaxed">Confirm the campaign configuration below. Upon commencement, invitations will be despatched within five minutes; the campaign may be paused at any time, but invitations already delivered cannot be retracted.</p>
+
+    <div class="grid md:grid-cols-2 gap-px bg-slate-300 border border-slate-300 mb-8">
+      <div class="bg-white p-6">
+        <div class="eyebrow text-slate-500 mb-2">Campaign</div>
+        <div class="font-serif text-lg font-semibold">CS Undergraduate · Fall 2026</div>
+        <div class="text-sm text-slate-700 mt-1">BSc Computer Science · Fall 2026 cycle · Owner: Dr. E. Whitfield</div>
+        <a href="campaign-new-step1.html" class="text-xs text-indigo-700 underline mt-3 inline-block">Edit</a>
+      </div>
+      <div class="bg-white p-6">
+        <div class="eyebrow text-slate-500 mb-2">Programme stream</div>
+        <div class="font-serif text-lg font-semibold">Undergraduate</div>
+        <div class="text-sm text-slate-700 mt-1">12 to 15 minutes · 6 questions · with adaptive follow-up</div>
+        <a href="campaign-new-step1.html" class="text-xs text-indigo-700 underline mt-3 inline-block">Edit</a>
+      </div>
+      <div class="bg-white p-6">
+        <div class="eyebrow text-slate-500 mb-2">Applicant roster</div>
+        <div class="font-serif text-lg font-semibold">680 candidates valid</div>
+        <div class="text-sm text-slate-700 mt-1">applicants_cs_fall26.csv · 4 records skipped</div>
+        <a href="campaign-new-step2.html" class="text-xs text-indigo-700 underline mt-3 inline-block">Edit</a>
+      </div>
+      <div class="bg-white p-6">
+        <div class="eyebrow text-slate-500 mb-2">Assessment rubric</div>
+        <div class="font-serif text-lg font-semibold">6 criteria · 100% allocated</div>
+        <div class="text-sm text-slate-700 mt-1 leading-relaxed">Communication 25% · Aptitude 20% · Motivation 25% · Critical thinking 15% · Personal qualities 10% · Engagement 5%</div>
+        <a href="campaign-new-step3.html" class="text-xs text-indigo-700 underline mt-3 inline-block">Edit</a>
+      </div>
+      <div class="bg-white p-6">
+        <div class="eyebrow text-slate-500 mb-2">Schedule</div>
+        <div class="font-serif text-lg font-semibold">Despatch immediately</div>
+        <div class="text-sm text-slate-700 mt-1">Deadline 12 May 2026, 23:59 GMT · automated reminders at D-7, D-3, D-1</div>
+        <a href="campaign-new-step4.html" class="text-xs text-indigo-700 underline mt-3 inline-block">Edit</a>
+      </div>
+      <div class="bg-white p-6">
+        <div class="eyebrow text-slate-500 mb-2">Indicative engagement fee</div>
+        <div class="font-serif text-lg font-semibold tabular-nums">USD 5,440.00</div>
+        <div class="text-sm text-slate-700 mt-1">680 candidates × USD 8 (Standard tier) — billed to Northstar University</div>
+      </div>
+    </div>
+
+    <div class="card border-l-4 border-l-amber-700 p-6 mb-8" style="background:#fbf6e9">
+      <div class="flex gap-4">
+        <div class="font-serif text-2xl font-semibold text-amber-700 leading-none">!</div>
+        <div>
+          <div class="eyebrow text-amber-700 mb-1">Notice</div>
+          <div class="font-serif font-semibold mb-1">Once delivered, invitations cannot be retracted.</div>
+          <p class="text-sm text-slate-700 leading-relaxed">The campaign may be paused, the deadline extended, or individual candidates removed at any time. Please confirm the configuration above before commencing.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-between items-center border-t border-slate-300 pt-6">
+      <a href="campaign-new-step4.html" class="btn-ghost">← Back</a>
+      <div class="flex gap-3">
+        <button class="btn-secondary">Save without commencing</button>
+        <a href="campaign-monitor.html" class="btn-primary">Commence campaign</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

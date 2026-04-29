@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome · Northstar University admissions interview</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: {
+        indigo:{50:'#f1f4f9',100:'#e1e8f0',200:'#c2cee0',300:'#93a6c2',400:'#5d779e',500:'#3a5577',600:'#1d3354',700:'#0f2744',800:'#0a1628',900:'#060e1c'},
+        slate:{50:'#faf8f3',100:'#f3f0e8',200:'#ece9e1',300:'#d8d3c8',400:'#b8b3a7',500:'#8a857a',600:'#5b5b58',700:'#4a4a48',800:'#2a2a28',900:'#1a1a1a'},
+        amber:{50:'#fbf6e9',100:'#f5ebcc',200:'#e2d2a8',300:'#cfb87a',500:'#8c6a1f',600:'#735618'}
+      },
+      fontFamily: { serif: ['"Source Serif 4"','Georgia','serif'] }
+    }}}
+  </script>
+  <link rel="stylesheet" href="../assets/shared.css" />
+</head>
+<body class="bg-slate-50 min-h-screen">
+  <a href="../index.html" class="sitemap-pill">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Sitemap
+  </a>
+
+  <header class="border-b border-slate-300 bg-white">
+    <div class="max-w-3xl mx-auto px-8 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="mark" style="background:#1e40af">NS</div>
+        <div>
+          <div class="font-serif font-semibold leading-none">Northstar University</div>
+          <div class="text-xs text-slate-500 mt-1">Office of Admissions</div>
+        </div>
+      </div>
+      <span class="text-xs text-slate-500">Provided by Admissions Assistant</span>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-8 py-12">
+    <div class="card p-10 mb-8">
+      <div class="eyebrow mb-3">CS Undergraduate · Fall 2026</div>
+      <h1 class="font-serif text-3xl font-semibold leading-tight mb-4">Welcome, Aanya Sharma.</h1>
+      <p class="text-slate-700 mb-8 leading-relaxed">You have been invited to complete the next stage of your application to the BSc Computer Science programme at Northstar University: a structured admissions interview, conducted via the Admissions Assistant platform. The interview takes approximately fifteen minutes and may be undertaken from any quiet location.</p>
+
+      <!-- Particulars -->
+      <dl class="grid sm:grid-cols-3 gap-px bg-slate-300 border border-slate-300 mb-8">
+        <div class="bg-white p-4">
+          <dt class="eyebrow text-slate-500 mb-1">Estimated duration</dt>
+          <dd class="font-serif text-lg font-semibold">~15 minutes</dd>
+        </div>
+        <div class="bg-white p-4">
+          <dt class="eyebrow text-slate-500 mb-1">Questions</dt>
+          <dd class="font-serif text-lg font-semibold">6, with adaptive follow-up</dd>
+        </div>
+        <div class="bg-white p-4">
+          <dt class="eyebrow text-slate-500 mb-1">Submission deadline</dt>
+          <dd class="font-serif text-lg font-semibold">12 May 2026, 23:59</dd>
+        </div>
+      </dl>
+
+      <h2 class="font-serif text-lg font-semibold mb-3">Before you begin</h2>
+      <ul class="text-sm text-slate-700 space-y-2 mb-8 leading-relaxed">
+        <li class="border-l-2 border-slate-300 pl-3">A quiet, well-lit environment with only one person on camera</li>
+        <li class="border-l-2 border-slate-300 pl-3">A working webcam and microphone</li>
+        <li class="border-l-2 border-slate-300 pl-3">A stable internet connection of at least 1 Mbps</li>
+        <li class="border-l-2 border-slate-300 pl-3">A current version of Chrome, Edge, Safari, or Firefox</li>
+      </ul>
+
+      <!-- Consent -->
+      <div class="card p-5 bg-amber-50 border-amber-300 mb-8">
+        <div class="eyebrow text-amber-700 mb-2">Consent &amp; recording notice</div>
+        <div class="flex items-start gap-3">
+          <input type="checkbox" id="consent" class="mt-1.5" />
+          <label for="consent" class="text-sm text-slate-800 leading-relaxed">
+            I understand and consent that this interview will be recorded — both audio and a written transcript — and that the recording, transcript, and any derived scoring will be used by Northstar University's Office of Admissions for the purpose of admissions evaluation. Recordings are encrypted at rest, stored within the institution's elected data residency, and destroyed at the close of the admissions cycle. The platform supports the Office of Admissions; final admission decisions are taken by the institution. I have read the full <a href="#" class="text-indigo-700 underline">privacy notice</a>.
+          </label>
+        </div>
+      </div>
+
+      <a href="identity.html" class="btn-primary block text-center w-full">Continue to identity verification</a>
+    </div>
+
+    <p class="text-xs text-slate-500 text-center">If you require accommodations or have a question about your invitation, write to <a href="#" class="underline">admissions@northstar.edu</a>.</p>
+  </main>
+</body>
+</html>

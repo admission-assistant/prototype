@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comparative assessment · Northstar University</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: {
+        indigo:{50:'#f1f4f9',100:'#e1e8f0',200:'#c2cee0',300:'#93a6c2',400:'#5d779e',500:'#3a5577',600:'#1d3354',700:'#0f2744',800:'#0a1628',900:'#060e1c'},
+        slate:{50:'#faf8f3',100:'#f3f0e8',200:'#ece9e1',300:'#d8d3c8',400:'#b8b3a7',500:'#8a857a',600:'#5b5b58',700:'#4a4a48',800:'#2a2a28',900:'#1a1a1a'},
+        violet:{500:'#1d3354',600:'#0f2744'},
+        emerald:{50:'#f1f7f3',100:'#dde9e0',200:'#c5dccd',300:'#9bc3a8',400:'#6ba37d',500:'#2f6b3f',600:'#235132',700:'#1c4127',800:'#143019',900:'#0c1f10'},
+        amber:{50:'#fbf6e9',100:'#f5ebcc',200:'#e2d2a8',300:'#cfb87a',400:'#b89c4d',500:'#8c6a1f',600:'#735618',700:'#5b4413',800:'#43320d',900:'#2b2008'},
+        rose:{50:'#fbeef0',100:'#f3d8dd',200:'#e2c0c6',300:'#c8939e',400:'#a85f6d',500:'#8a2632',600:'#741e29',700:'#5b1820',800:'#421217',900:'#2a0c0e'}
+      },
+      fontFamily: { serif: ['"Source Serif 4"','Georgia','serif'] }
+    }}}
+  </script>
+  <link rel="stylesheet" href="../assets/shared.css" />
+</head>
+<body class="bg-slate-50 min-h-screen">
+  <a href="../index.html" class="sitemap-pill">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Sitemap
+  </a>
+
+  <header class="border-b border-slate-300 bg-white">
+    <div class="max-w-7xl mx-auto px-8 py-3 flex items-center justify-between text-xs">
+      <a href="overview.html" class="text-slate-600 hover:text-indigo-700">← Cohort results overview</a>
+      <span class="text-slate-500">3 candidates selected for comparative assessment</span>
+    </div>
+    <div class="max-w-7xl mx-auto px-8 py-6 flex items-end justify-between">
+      <div>
+        <div class="eyebrow mb-2">Comparative Assessment</div>
+        <h1 class="font-serif text-3xl font-semibold leading-tight">Three candidates · Computer Science Undergraduate</h1>
+        <div class="text-sm text-slate-600 mt-1">Side-by-side examination of rubric-anchored evaluations.</div>
+      </div>
+      <div class="flex items-center gap-2">
+        <button class="btn-secondary">Add candidate</button>
+        <button class="btn-primary">Export comparison</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-8 py-10 space-y-8">
+
+    <!-- Candidate header band -->
+    <section class="grid grid-cols-3 gap-px bg-slate-300 border border-slate-300">
+      <article class="bg-white p-7 border-t-2 border-t-emerald-700">
+        <div class="eyebrow mb-2">Rank 1 · 99th percentile</div>
+        <h2 class="font-serif text-2xl font-semibold">Hiroshi Tanaka</h2>
+        <div class="text-sm text-slate-600 mt-1 font-mono">CS-26-0008</div>
+        <div class="mt-5 pt-5 border-t border-slate-200 flex items-baseline justify-between">
+          <div>
+            <div class="eyebrow text-slate-500 mb-1">Composite</div>
+            <div class="font-serif text-5xl font-semibold tabular-nums text-emerald-700">4.7</div>
+          </div>
+          <span class="chip chip-positive">High confidence</span>
+        </div>
+      </article>
+      <article class="bg-white p-7">
+        <div class="eyebrow mb-2">Rank 2 · 94th percentile</div>
+        <h2 class="font-serif text-2xl font-semibold">Aanya Sharma</h2>
+        <div class="text-sm text-slate-600 mt-1 font-mono">CS-26-0001</div>
+        <div class="mt-5 pt-5 border-t border-slate-200 flex items-baseline justify-between">
+          <div>
+            <div class="eyebrow text-slate-500 mb-1">Composite</div>
+            <div class="font-serif text-5xl font-semibold tabular-nums">4.4</div>
+          </div>
+          <span class="chip chip-positive">High confidence</span>
+        </div>
+      </article>
+      <article class="bg-white p-7">
+        <div class="eyebrow mb-2">Rank 3 · 91st percentile</div>
+        <h2 class="font-serif text-2xl font-semibold">Priya Iyer</h2>
+        <div class="text-sm text-slate-600 mt-1 font-mono">CS-26-0042</div>
+        <div class="mt-5 pt-5 border-t border-slate-200 flex items-baseline justify-between">
+          <div>
+            <div class="eyebrow text-slate-500 mb-1">Composite</div>
+            <div class="font-serif text-5xl font-semibold tabular-nums">4.3</div>
+          </div>
+          <span class="chip chip-positive">High confidence</span>
+        </div>
+      </article>
+    </section>
+
+    <!-- Score table -->
+    <section class="card overflow-hidden">
+      <div class="px-6 py-5 border-b border-slate-300">
+        <div class="eyebrow">Rubric-anchored Score Comparison</div>
+        <div class="text-sm text-slate-600 mt-1">Cohort mean shown for reference (n = 374).</div>
+      </div>
+      <table class="tbl-corp">
+        <thead><tr><th>Criterion</th><th class="text-right">Hiroshi</th><th class="text-right">Aanya</th><th class="text-right">Priya</th><th class="text-right">Cohort μ</th></tr></thead>
+        <tbody>
+          <tr><td class="font-serif font-semibold">Communication clarity</td><td class="text-right font-semibold tabular-nums text-emerald-700">4.8</td><td class="text-right tabular-nums">4.5</td><td class="text-right tabular-nums">4.4</td><td class="text-right tabular-nums text-slate-500">3.9</td></tr>
+          <tr><td class="font-serif font-semibold">Aptitude</td><td class="text-right font-semibold tabular-nums text-emerald-700">4.6</td><td class="text-right tabular-nums">4.2</td><td class="text-right tabular-nums">4.1</td><td class="text-right tabular-nums text-slate-500">3.5</td></tr>
+          <tr><td class="font-serif font-semibold">Motivation &amp; fit</td><td class="text-right tabular-nums">4.7</td><td class="text-right font-semibold tabular-nums text-emerald-700">4.6</td><td class="text-right tabular-nums">4.5</td><td class="text-right tabular-nums text-slate-500">3.8</td></tr>
+          <tr><td class="font-serif font-semibold">Critical thinking</td><td class="text-right font-semibold tabular-nums text-emerald-700">4.8</td><td class="text-right tabular-nums">4.3</td><td class="text-right tabular-nums">4.2</td><td class="text-right tabular-nums text-slate-500">3.4</td></tr>
+          <tr><td class="font-serif font-semibold">Personal qualities</td><td class="text-right tabular-nums">4.5</td><td class="text-right font-semibold tabular-nums text-emerald-700">4.4</td><td class="text-right tabular-nums">4.0</td><td class="text-right tabular-nums text-slate-500">3.6</td></tr>
+          <tr><td class="font-serif font-semibold">Engagement &amp; integrity</td><td class="text-right font-semibold tabular-nums text-emerald-700">4.9</td><td class="text-right tabular-nums">4.5</td><td class="text-right tabular-nums">4.3</td><td class="text-right tabular-nums text-slate-500">4.2</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Examiner summaries -->
+    <section class="grid grid-cols-3 gap-px bg-slate-300 border border-slate-300">
+      <article class="bg-white p-7">
+        <div class="eyebrow mb-3">Examiner summary · Hiroshi</div>
+        <p class="text-sm text-slate-800 leading-relaxed mb-4"><strong class="font-serif">Exceptional analytical depth.</strong> The strongest critical-thinking signal observed in the cohort. The candidate uses trade-off frameworks unprompted and asks proactive clarifying questions of the interviewer.</p>
+        <div class="border-t border-slate-200 pt-3">
+          <div class="eyebrow text-slate-500 mb-2">Differentiator</div>
+          <div class="text-xs text-slate-700">Mathematical reasoning depth on Q4; recursion explained via two distinct analogies.</div>
+        </div>
+      </article>
+      <article class="bg-white p-7">
+        <div class="eyebrow mb-3">Examiner summary · Aanya</div>
+        <p class="text-sm text-slate-800 leading-relaxed mb-4"><strong class="font-serif">Strong all-rounder, builder mindset.</strong> Concrete past projects, faculty-aware, communicates with structure.</p>
+        <div class="border-t border-slate-200 pt-3">
+          <div class="eyebrow text-slate-500 mb-2">Differentiator</div>
+          <div class="text-xs text-slate-700">Names specific Northstar faculty research areas; portfolio of projects with named end-users.</div>
+        </div>
+      </article>
+      <article class="bg-white p-7">
+        <div class="eyebrow mb-3">Examiner summary · Priya</div>
+        <p class="text-sm text-slate-800 leading-relaxed mb-4"><strong class="font-serif">Sharp, well-prepared, polished.</strong> Slightly more rehearsed answers and less spontaneous reasoning under follow-up than the two above.</p>
+        <div class="border-t border-slate-200 pt-3">
+          <div class="eyebrow text-slate-500 mb-2">Differentiator</div>
+          <div class="text-xs text-slate-700">Strongest research-interest articulation; clear long-horizon plan.</div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Side-by-side excerpt -->
+    <section class="card overflow-hidden">
+      <div class="px-6 py-5 border-b border-slate-300">
+        <div class="eyebrow">Side-by-side Response · Q.03 — Critical Thinking</div>
+        <div class="text-sm text-slate-600 mt-1">Question: "You are given five hundred dollars to improve the experience of incoming first-years. Take me through what you would choose to do."</div>
+      </div>
+      <div class="grid grid-cols-3 divide-x divide-slate-300">
+        <div class="p-7 text-sm text-slate-800 leading-relaxed">
+          <div class="eyebrow mb-3">Hiroshi</div>
+          "I would begin by ranking pain points by frequency multiplied by intensity. With five hundred dollars I would select whichever lever produces the greatest expected reduction per dollar — most likely a peer-mentor onboarding programme, since the binding constraint here is loneliness, not information."
+        </div>
+        <div class="p-7 text-sm text-slate-800 leading-relaxed">
+          <div class="eyebrow mb-3">Aanya</div>
+          "To begin, I would not commit the budget without first understanding the actual difficulties. I would speak to incoming students first, then split the budget between a small orientation kit and a peer-led mentorship programme — but if forced to choose, I would retain the mentorship programme: it pays compound returns through the year."
+        </div>
+        <div class="p-7 text-sm text-slate-800 leading-relaxed">
+          <div class="eyebrow mb-3">Priya</div>
+          "I would organise a welcome week with curated mentor sessions. The five hundred dollars would cover refreshments and printed handbooks. The objective is to make sure every first-year leaves the first week knowing two senior students by name."
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="inst-footer mt-16">
+    <div class="max-w-7xl mx-auto px-8 py-6 flex flex-wrap items-center justify-between gap-3">
+      <span>Northstar University · Office of Admissions · Comparative assessment, confidential</span>
+      <span>prototype build 0.2</span>
+    </div>
+  </footer>
+</body>
+</html>

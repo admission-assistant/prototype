@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sitemap · Admissions Assistant</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: {
+        indigo:{50:'#f1f4f9',100:'#e1e8f0',200:'#c2cee0',300:'#93a6c2',400:'#5d779e',500:'#3a5577',600:'#1d3354',700:'#0f2744',800:'#0a1628',900:'#060e1c'},
+        slate:{50:'#faf8f3',100:'#f3f0e8',200:'#ece9e1',300:'#d8d3c8',400:'#b8b3a7',500:'#8a857a',600:'#5b5b58',700:'#4a4a48',800:'#2a2a28',900:'#1a1a1a'},
+        violet:{500:'#1d3354',600:'#0f2744'},
+        emerald:{50:'#f1f7f3',100:'#dde9e0',200:'#c5dccd',300:'#9bc3a8',400:'#6ba37d',500:'#2f6b3f',600:'#235132',700:'#1c4127',800:'#143019',900:'#0c1f10'},
+        amber:{50:'#fbf6e9',100:'#f5ebcc',200:'#e2d2a8',300:'#cfb87a',400:'#b89c4d',500:'#8c6a1f',600:'#735618',700:'#5b4413',800:'#43320d',900:'#2b2008'},
+        rose:{50:'#fbeef0',100:'#f3d8dd',200:'#e2c0c6',300:'#c8939e',400:'#a85f6d',500:'#8a2632',600:'#741e29',700:'#5b1820',800:'#421217',900:'#2a0c0e'}
+      },
+      fontFamily: { serif: ['"Source Serif 4"','Georgia','serif'] }
+    }}}
+  </script>
+  <link rel="stylesheet" href="assets/shared.css" />
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+  <!-- Top utility bar -->
+  <div class="border-b border-slate-300 bg-white">
+    <div class="max-w-7xl mx-auto px-8 py-2 flex items-center justify-between text-xs text-slate-600">
+      <span>Internal navigation reference · prototype build 0.2</span>
+      <span class="flex items-center gap-4">
+        <span>Confidential — for stakeholder review</span>
+        <span class="text-slate-400">|</span>
+        <span>v0.2 · 29 Apr 2026</span>
+      </span>
+    </div>
+  </div>
+
+  <!-- Masthead -->
+  <header class="border-b border-slate-300 bg-white">
+    <div class="max-w-7xl mx-auto px-8 py-7 flex items-end justify-between">
+      <div class="flex items-end gap-4">
+        <div class="mark lg">AA</div>
+        <div>
+          <div class="eyebrow mb-1">Admissions Assistant</div>
+          <h1 class="font-serif text-3xl font-semibold tracking-tight leading-none">Prototype Sitemap</h1>
+        </div>
+      </div>
+      <div class="hidden md:block text-right text-xs text-slate-600 max-w-sm leading-relaxed">
+        A directory of all screens in the prototype. Open any page individually, or walk through a flow end-to-end. Every page returns here via the marker in the upper-right.
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-8 py-10">
+
+    <!-- Section header -->
+    <div class="mb-6 pb-3 border-b border-slate-300 flex items-baseline justify-between">
+      <h2 class="font-serif text-xl font-semibold">I. Application flows</h2>
+      <span class="text-xs text-slate-500">Four discrete user journeys</span>
+    </div>
+
+    <!-- Flows -->
+    <div class="grid lg:grid-cols-2 gap-x-10 gap-y-8 mb-16">
+
+      <!-- A · Marketing -->
+      <section>
+        <div class="flex items-baseline justify-between mb-3">
+          <div>
+            <div class="eyebrow text-slate-500">Section A</div>
+            <h3 class="font-serif text-lg font-semibold">Public marketing</h3>
+          </div>
+          <span class="text-xs text-slate-500">1 page</span>
+        </div>
+        <ol class="border-t border-slate-300">
+          <li class="border-b border-slate-200">
+            <a href="marketing.html" class="flex items-center justify-between py-3 text-sm hover:text-indigo-700">
+              <span><span class="text-slate-400 font-mono mr-3">A.01</span>Institutional landing page</span>
+              <span class="text-slate-400">→</span>
+            </a>
+          </li>
+        </ol>
+      </section>
+
+      <!-- B · Admin -->
+      <section>
+        <div class="flex items-baseline justify-between mb-3">
+          <div>
+            <div class="eyebrow text-slate-500">Section B</div>
+            <h3 class="font-serif text-lg font-semibold">University administration</h3>
+          </div>
+          <span class="text-xs text-slate-500">8 pages</span>
+        </div>
+        <ol class="border-t border-slate-300">
+          <li class="border-b border-slate-200"><a href="admin/signin.html" class="flex items-center justify-between py-3 text-sm hover:text-indigo-700"><span><span class="text-slate-400 font-mono mr-3">B.01</span>Sign in</span><span class="text-slate-400">→</span></a></li>
+          <li class="border-b border-slate-200"><a href="admin/dashboard.html" class="flex items-center justify-between py-3 text-sm hover:text-indigo-700"><span><span class="text-slate-400 font-mono mr-3">B.02</span>Institution dashboard</span><span class="text-slate-400">→</span></a></li>
+          <li class="border-b border-slate-200"><a href="admin/campaign-new-step1.html" class="flex items-center justify-between py-3 text-sm hover:text-indigo-700"><span><span class="text-slate-400 font-mono mr-3">B.03.1</span>Create campaign — programme stream</span><span class="text-slate-400">→</span></a></li>
+          <li class="border-b border-slate-200"><a href="admin/campaign-new-step2.html" class="flex items-center justify-between py-3 text-sm hover:text-indigo-700"><span><span class="text-slate-400 font-mono mr-3">B.03.2</span>Create campaign — applicant intake</span><span class="text-slate-400">→</span></a></li>
+          <li class="border-b border-slate-200"><a href="admin/campaign-new-step3.html" class="flex items-center justify-between py-3 text-sm hover:text-indigo-700"><span><span class="text-slate-400 font-mono mr-3">B.03.3</span>Create campaign — assessment rubric</span><span class="text-slate-400">→</span></a></li>
+          <li class="border-b border-slate-200"><a href="admin/campaign-new-step4.html" class="flex items-center justify-between py-3 text-sm hover:text-indigo-700"><span><span class="text-slate-400 font-mono mr-3">B.03.4</span>Create campaign — invitation &amp; identity</span><span class="text-slate-400">→</span></a></li>
+          <li class="border-b border-slate-200"><a href="admin/campaign-new-step5.html" class="flex items-center justify-between py-3 text-sm hover:text-indigo-700"><span><span class="text-slate-400 font-mono mr-3">B.03.5</span>Create campaign — review &amp; commence</span><span class="text-slate-400">→</span></a></li>
+          <li class="border-b border-slate-200"><a href="admin/campaign-monitor.html" class="flex items-center justify-between py-3 text-sm hover:text-indigo-700"><span><span class="text-slate-400 font-mono mr-3">B.04</span>Campaign cohort monitor</span><span class="text-slate-400">→</span></a></li>
+        </ol>
+      </section>
+
+      <!-- C · Student -->
+      <section>
+        <div class="flex items-baseline justify-between mb-3">
+          <div>
+            <div class="eyebrow text-slate-500">Section C</div>
+            <h3 class="font-serif text-lg font-semibold">Candidate interview</h3>
+          </div>
+          <span class="text-xs text-slate-500">6 pages</span>
+        </div>
+        <ol class="border-t border-slate-300">
+          <li class="border-b border-slate-200"><a href="student/welcome.html" class="flex items-center justify-between py-3 text-sm hover:text-indigo-700"><span><span class="text-slate-400 font-mono mr-3">C.01</span>Welcome &amp; consent</span><span class="text-slate-400">→</span></a></li>
+          <li class="border-b border-slate-200"><a href="student/identity.html" class="flex items-center justify-between py-3 text-sm hover:text-indigo-700"><span><span class="text-slate-400 font-mono mr-3">C.02</span>Identity verification</span><span class="text-slate-400">→</span></a></li>
+          <li class="border-b border-slate-200"><a href="student/system-check.html" class="flex items-center justify-between py-3 text-sm hover:text-indigo-700"><span><span class="text-slate-400 font-mono mr-3">C.03</span>System readiness check</span><span class="text-slate-400">→</span></a></li>
+          <li class="border-b border-slate-200"><a href="student/brief.html" class="flex items-center justify-between py-3 text-sm hover:text-indigo-700"><span><span class="text-slate-400 font-mono mr-3">C.04</span>Pre-interview briefing</span><span class="text-slate-400">→</span></a></li>
+          <li class="border-b border-slate-200"><a href="student/interview.html" class="flex items-center justify-between py-3 text-sm hover:text-indigo-700"><span><span class="text-slate-400 font-mono mr-3">C.05</span>Interview chamber</span><span class="text-slate-400">→</span></a></li>
+          <li class="border-b border-slate-200"><a href="student/complete.html" class="flex items-center justify-between py-3 text-sm hover:text-indigo-700"><span><span class="text-slate-400 font-mono mr-3">C.06</span>Submission acknowledgement</span><span class="text-slate-400">→</span></a></li>
+        </ol>
+      </section>
+
+      <!-- D · Results -->
+      <section>
+        <div class="flex items-baseline justify-between mb-3">
+          <div>
+            <div class="eyebrow text-slate-500">Section D</div>
+            <h3 class="font-serif text-lg font-semibold">Evaluation &amp; reporting</h3>
+          </div>
+          <span class="text-xs text-slate-500">3 pages</span>
+        </div>
+        <ol class="border-t border-slate-300">
+          <li class="border-b border-slate-200"><a href="results/overview.html" class="flex items-center justify-between py-3 text-sm hover:text-indigo-700"><span><span class="text-slate-400 font-mono mr-3">D.01</span>Cohort results overview</span><span class="text-slate-400">→</span></a></li>
+          <li class="border-b border-slate-200"><a href="results/candidate.html" class="flex items-center justify-between py-3 text-sm hover:text-indigo-700"><span><span class="text-slate-400 font-mono mr-3">D.02</span>Individual candidate dossier</span><span class="text-slate-400">→</span></a></li>
+          <li class="border-b border-slate-200"><a href="results/compare.html" class="flex items-center justify-between py-3 text-sm hover:text-indigo-700"><span><span class="text-slate-400 font-mono mr-3">D.03</span>Comparative assessment</span><span class="text-slate-400">→</span></a></li>
+        </ol>
+      </section>
+    </div>
+
+    <!-- End-to-end flow -->
+    <div class="mb-6 pb-3 border-b border-slate-300 flex items-baseline justify-between">
+      <h2 class="font-serif text-xl font-semibold">II. End-to-end process</h2>
+      <span class="text-xs text-slate-500">From institutional onboarding to admissions decision</span>
+    </div>
+
+    <div class="card p-8 mb-12">
+      <ol class="grid grid-cols-7 gap-2 text-xs">
+        <li class="border-l-2 border-indigo-700 pl-3">
+          <div class="text-slate-400 font-mono mb-1">Phase 1</div>
+          <div class="font-semibold">Institutional onboarding</div>
+          <div class="text-slate-600 mt-1">Registration, tenant configuration</div>
+        </li>
+        <li class="border-l-2 border-indigo-700 pl-3">
+          <div class="text-slate-400 font-mono mb-1">Phase 2</div>
+          <div class="font-semibold">Cohort intake</div>
+          <div class="text-slate-600 mt-1">Applicant roster (CSV / Excel)</div>
+        </li>
+        <li class="border-l-2 border-indigo-700 pl-3">
+          <div class="text-slate-400 font-mono mb-1">Phase 3</div>
+          <div class="font-semibold">Rubric configuration</div>
+          <div class="text-slate-600 mt-1">Criteria, weights, scoring scale</div>
+        </li>
+        <li class="border-l-2 border-indigo-700 pl-3">
+          <div class="text-slate-400 font-mono mb-1">Phase 4</div>
+          <div class="font-semibold">Invitation despatch</div>
+          <div class="text-slate-600 mt-1">Tokenised links, deadline, reminders</div>
+        </li>
+        <li class="border-l-2 border-indigo-700 pl-3">
+          <div class="text-slate-400 font-mono mb-1">Phase 5</div>
+          <div class="font-semibold">Candidate interviews</div>
+          <div class="text-slate-600 mt-1">Adaptive, recorded, transcribed</div>
+        </li>
+        <li class="border-l-2 border-indigo-700 pl-3">
+          <div class="text-slate-400 font-mono mb-1">Phase 6</div>
+          <div class="font-semibold">Automated evaluation</div>
+          <div class="text-slate-600 mt-1">Rubric-anchored scoring with evidence</div>
+        </li>
+        <li class="border-l-2 border-indigo-700 pl-3">
+          <div class="text-slate-400 font-mono mb-1">Phase 7</div>
+          <div class="font-semibold">Faculty determination</div>
+          <div class="text-slate-600 mt-1">Human review, override, decision</div>
+        </li>
+      </ol>
+    </div>
+
+    <p class="text-xs text-slate-500 leading-relaxed max-w-3xl">
+      This sitemap is an internal navigation reference for the prototype build. It is not part of the production application. All screens use illustrative data only; no real applicant or institutional information is represented herein.
+    </p>
+  </main>
+
+  <footer class="inst-footer mt-16">
+    <div class="max-w-7xl mx-auto px-8 py-6 flex flex-wrap items-center justify-between gap-4">
+      <div>© 2026 Admissions Assistant Pte. Ltd. · All rights reserved.</div>
+      <div class="flex gap-5">
+        <a href="#">Privacy notice</a>
+        <a href="#">Data processing addendum</a>
+        <a href="#">Security &amp; compliance</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

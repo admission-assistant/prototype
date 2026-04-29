@@ -1,0 +1,159 @@
+/* ============================================================
+   Admissions Assistant — design system
+   Tone: corporate, institutional, education-sector serious.
+   Inspired by: Pearson, ETS, top-tier business school portals.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap');
+
+:root {
+  --ink-900: #0a1628;       /* deepest navy — for primary text */
+  --ink-800: #0f2744;       /* primary brand navy */
+  --ink-700: #1d3354;       /* navy mid */
+  --ink-500: #4a5d7e;       /* navy muted */
+  --ink-300: #93a6c2;       /* navy light */
+  --ink-100: #e1e8f0;       /* navy tint */
+  --ink-50:  #f1f4f9;
+
+  --paper:   #faf8f3;       /* warm off-white background */
+  --paper-2: #f3f0e8;       /* sand */
+  --rule:    #d8d3c8;       /* warm border */
+  --rule-2:  #ece9e1;
+
+  --accent:  #8a6d3b;       /* muted academic gold (sparing) */
+  --accent-2:#7a1a25;       /* burgundy (sparing) */
+
+  --text:    #1a1a1a;
+  --text-2:  #4a4a48;       /* warm muted */
+  --text-3:  #7a7a76;
+}
+
+html { font-feature-settings: "kern", "liga", "calt"; }
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: var(--paper);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+/* Serif display family */
+.font-serif { font-family: 'Source Serif 4', 'Source Serif Pro', Georgia, 'Times New Roman', serif; font-feature-settings: "kern", "liga"; }
+h1.serif, h2.serif, h3.serif,
+.h-serif { font-family: 'Source Serif 4', Georgia, serif; letter-spacing: -0.01em; }
+
+/* Sitemap pill — reserved, charcoal */
+.sitemap-pill {
+  position: fixed; top: 14px; right: 14px; z-index: 1000;
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 6px 12px;
+  border: 1px solid var(--ink-700);
+  background: var(--ink-900); color: #fff;
+  font-size: 11px; font-weight: 600; letter-spacing: 0.02em; text-transform: uppercase;
+  text-decoration: none;
+}
+.sitemap-pill:hover { background: var(--ink-800); }
+.sitemap-pill svg { width: 12px; height: 12px; }
+
+/* Cards — rectilinear, hairline borders, no soft shadows */
+.card {
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+}
+.card-hover:hover { border-color: var(--ink-700); transition: border-color .15s ease; }
+
+/* Subdued informational chips (replace cheerful pills) */
+.chip {
+  display: inline-flex; align-items: center; gap: 4px;
+  padding: 1px 8px;
+  border: 1px solid var(--rule);
+  background: #fff;
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 0.04em; text-transform: uppercase;
+  color: var(--text-2);
+  border-radius: 2px;
+}
+.chip-primary  { border-color: var(--ink-700); color: var(--ink-800); background: var(--ink-50); }
+.chip-positive { border-color: #2f6b3f; color: #2f6b3f; background: #f1f7f3; }
+.chip-warning  { border-color: #8c6a1f; color: #8c6a1f; background: #fbf6e9; }
+.chip-critical { border-color: #8a2632; color: #8a2632; background: #fbeef0; }
+.chip-muted    { border-color: var(--rule); color: var(--text-3); background: #fff; }
+
+/* Backwards-compat aliases for legacy markup */
+.pill          { display: inline-flex; align-items: center; gap: 4px; padding: 1px 8px; border-radius: 2px; font-size: 11px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; border: 1px solid var(--rule); }
+.pill-emerald  { color: #2f6b3f; background: #f1f7f3; border-color: #c5dccd; }
+.pill-amber    { color: #8c6a1f; background: #fbf6e9; border-color: #e2d2a8; }
+.pill-rose     { color: #8a2632; background: #fbeef0; border-color: #e2c0c6; }
+.pill-slate    { color: var(--text-2); background: #fff; border-color: var(--rule); }
+.pill-indigo   { color: var(--ink-800); background: var(--ink-50); border-color: var(--ink-100); }
+.pill-blue     { color: var(--ink-800); background: var(--ink-50); border-color: var(--ink-100); }
+
+/* Section eyebrow — small caps academic feel */
+.eyebrow {
+  font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--text-3);
+}
+
+/* Institutional rule — top of every page section */
+.section-rule { border-top: 1px solid var(--rule); }
+
+/* Compact KBD */
+.kbd { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; padding: 1px 6px; border: 1px solid var(--rule); border-bottom-width: 2px; border-radius: 3px; background: #fff; color: var(--text-2); }
+
+/* Brand mark — letter inside a square frame, not a coloured rounded chip */
+.mark {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 32px; height: 32px;
+  background: var(--ink-900); color: #fff;
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border-radius: 1px;
+  font-size: 13px;
+}
+.mark.lg { width: 44px; height: 44px; font-size: 18px; }
+
+/* Buttons */
+.btn-primary {
+  background: var(--ink-900); color: #fff;
+  font-weight: 600; font-size: 13px; letter-spacing: 0.02em;
+  padding: 10px 18px; border-radius: 2px; display: inline-block;
+  border: 1px solid var(--ink-900);
+}
+.btn-primary:hover { background: var(--ink-800); }
+.btn-secondary {
+  background: #fff; color: var(--ink-900);
+  font-weight: 600; font-size: 13px;
+  padding: 10px 18px; border-radius: 2px; display: inline-block;
+  border: 1px solid var(--ink-900);
+}
+.btn-secondary:hover { background: var(--ink-50); }
+.btn-ghost {
+  background: transparent; color: var(--text-2);
+  font-weight: 500; font-size: 13px;
+  padding: 10px 14px; border-radius: 2px; display: inline-block;
+}
+.btn-ghost:hover { color: var(--ink-900); }
+
+/* Form fields — flatter */
+input[type="text"], input[type="email"], input[type="password"], input[type="number"], select, textarea {
+  border-radius: 2px !important;
+}
+
+/* Footer — institutional */
+.inst-footer {
+  border-top: 1px solid var(--rule);
+  background: var(--paper-2);
+  font-size: 12px;
+  color: var(--text-3);
+}
+.inst-footer a { color: var(--text-2); text-decoration: underline; text-underline-offset: 2px; }
+.inst-footer a:hover { color: var(--ink-900); }
+
+/* Tables — dense, gridded */
+.tbl-corp { width: 100%; font-size: 13px; border-collapse: collapse; }
+.tbl-corp th { text-align: left; font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-3); font-weight: 700; padding: 10px 14px; border-bottom: 1px solid var(--ink-700); background: #fff; }
+.tbl-corp td { padding: 12px 14px; border-bottom: 1px solid var(--rule-2); vertical-align: top; }
+.tbl-corp tr:hover td { background: var(--paper-2); }
